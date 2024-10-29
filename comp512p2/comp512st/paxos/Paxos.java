@@ -5,6 +5,7 @@ import comp512.gcl.*;
 
 import comp512.utils.*;
 
+
 // Any other imports that you may need.
 import java.io.*;
 import java.util.logging.*;
@@ -21,6 +22,9 @@ public class Paxos
 	GCL gcl;
 	FailCheck failCheck;
 
+	private int ballotID;
+	
+
 	public Paxos(String myProcess, String[] allGroupProcesses, Logger logger, FailCheck failCheck) throws IOException, UnknownHostException
 	{
 		// Rember to call the failCheck.checkFailure(..) with appropriate arguments throughout your Paxos code to force fail points if necessary.
@@ -28,6 +32,9 @@ public class Paxos
 
 		// Initialize the GCL communication system as well as anything else you need to.
 		this.gcl = new GCL(myProcess, allGroupProcesses, null, logger) ;
+
+
+
 
 	}
 
@@ -38,6 +45,8 @@ public class Paxos
 		// Extend this to build whatever Paxos logic you need to make sure the messaging system is total order.
 		// Here you will have to ensure that the CALL BLOCKS, and is returned ONLY when a majority (and immediately upon majority) of processes have accepted the value.
 		gcl.broadcastMsg(val);
+
+
 	}
 
 	// This is what the application layer is calling to figure out what is the next message in the total order.
@@ -54,5 +63,84 @@ public class Paxos
 	{
 		gcl.shutdownGCL();
 	}
+
+
+
+	// Every player is only the proposer for their own moves, they need to be the acceptor for the moves proposed by the other threads
+	private class AcceptorThread extends Thread{
+		
+
+		public void run(){
+
+			while (true) {
+
+				GCMessage msg = null;
+
+				// Check if there is a message
+				try {
+					msg = gcl.readGCMessage();
+				} catch (InterruptedException e){ // Catch an InterruptedException per the documentation in the doc
+					e.printStackTrace();
+				}
+
+				// Extract data from the message received
+				MyMessage mymsg = (MyMessage)(msg.val);
+
+				switch (mymsg.mtype){
+					case ACCEPT:
+					// TODO
+					break;
+
+					case ACKNOWLEDGE:
+					// TODO
+					break;
+
+					case CONFIRM:
+					// TODO
+					break;
+
+					case DENY:
+					// TODO
+					break;
+
+					case REFUSE:
+					// TODO
+					break;
+
+					case PROMISE:
+					// TODO
+					break;
+
+					case PROPOSE:
+					// TODO
+					break;
+				}
+
+
+
+			}
+		}
+	}
+
+
+	// Need to create a new class to define the type of message objects the Paxos threads send between each other
+	private class MyMessage {
+		MsgType mtype;
+		Object value;
+
+
+		MyMessage(MsgType mtype, Object value){
+			this.mtype = mtype;
+			this.value = value;
+
+		}
+		
+	}
+
+	// The MsgType will be piggybacked onto the messages so that processes can identify what the message type is when received
+	// Message Types are based on the Paxos slides
+	// DENY is used when the PROPOSE? ballot id suggested by the proposer is denied by a listener thread
+	// REFUSE is used after the ballot id was accepted and the proposer sends an ACCEPT message with a value and a listener thread refuses
+	private enum MsgType {ACCEPT, ACKNOWLEDGE, CONFIRM, DENY, PROMISE, PROPOSE, REFUSE}
 }
 
