@@ -9,6 +9,10 @@ import comp512.utils.*;
 import java.io.*;
 import java.util.logging.*;
 import java.net.UnknownHostException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ConcurrentLinkedQueue;
+
 
 // ANY OTHER classes, etc., that you add must be private to this package and not visible to the application layer.
 
@@ -19,6 +23,12 @@ public class Paxos
 {
 	GCL gcl;
 	FailCheck failCheck;
+	ConcurrentLinkedQueue<GCMessage> outgoing;
+	ConcurrentLinkedQueue<GCMessage> incoming;
+	final int port;
+	final int majority;
+
+	Proposer proposer;
 
 	public Paxos(String myProcess, String[] allGroupProcesses, Logger logger, FailCheck failCheck) throws IOException, UnknownHostException
 	{
@@ -27,7 +37,10 @@ public class Paxos
 
 		// Initialize the GCL communication system as well as anything else you need to.
 		this.gcl = new GCL(myProcess, allGroupProcesses, null, logger) ;
-
+		this.outgoing = new ConcurrentLinkedQueue<>();
+		this.incoming = new ConcurrentLinkedQueue<>();
+		this.port = Integer.parseInt(myProcess.split(":")[1]);
+		this.majority = (allGroupProcesses.length /2) + 1;
 	}
 
 	// This is what the application layer is going to call to send a message/value, such as the player and the move
@@ -37,8 +50,14 @@ public class Paxos
 		// Extend this to build whatever Paxos logic you need to make sure the messaging system is total order.
 		// Here you will have to ensure that the CALL BLOCKS, and is returned ONLY when a majority (and immediately upon majority) of processes have accepted the value.
 		gcl.broadcastMsg(val);
-		
-		
+
+		/*
+		*	Paxos Implementation:
+		* 	1. Messages will be placed in a thread-safe queue (ConcurrentLinkedQueue?)
+		* 	2. A Proposer thread will continuously process messages in the queue
+		* 	3. An Acceptor thread will continuously read paxosmessages, and place any confirmed messages into a thread-safe queue
+		* 	**Each Process can only have one Proposer/Acceptor Thread running concurrently**
+		*/		
 	}
 
 	// This is what the application layer is calling to figure out what is the next message in the total order.
@@ -101,42 +120,28 @@ public class Paxos
 		}
 		
 		/*
-		 * Getter and Setter Methods:
+		 * Getter Methods:
 		 * getType(), getBID(),getVal(), getSenderID(),
-		 * setType(MsgType type), setBID(int BID), setVal(GCMessage val), setSenderID(String senderID)
 		 * Testing Aid: toString()
+		 * No Setter Methods as PaxosMessage should be an immutable class
 		 */
 		public MsgType getType() {
 			return type;
-		}
-	
-		public void setType(MsgType type) {
-			this.type = type;
 		}
 	
 		public int getBID() {
 			return BID;
 		}
 	
-		public void setBID(int BID) {
-			this.BID = BID;
-		}
 	
 		public GCMessage getVal() {
 			return val;
-		}
-	
-		public void setVal(GCMessage val) {
-			this.val = val;
 		}
 	
 		public String getSenderID() {
 			return senderID;
 		}
 	
-		public void setSenderID(String senderID) {
-			this.senderID = senderID;
-		}
 
 		@Override
  		public String toString() {
@@ -148,8 +153,127 @@ public class Paxos
 		}
 	}
 
-	
+
+	private class Proposer extends Thread
+	{	
+		//proposerID is used to generate unique BID's
+		private int BID;
+		private Object val;
+		private int majority;
+		private int proposerID;
+		private int counter;
+
+		private Proposer(int proposerID, int majority){
+			this.BID = -1;
+			this.val = null;
+			this.majority = majority;
+			this.proposerID = proposerID;
+			this.counter = 0;
+		}
+
+		//The counter goes in the highest 20 bits, proposerID at the bottom.
+		private int generateBID(){
+			counter+=1;
+			return (counter << 20) | proposerID;
+			
+		}
+
+		@Override 
+		public void run(){
+			//While running, will constantly try to pull a message out of "outgoing", and if successful, initiates an instance of PAXOS
+			while (true){
+				GCMessage msg = outgoing.poll();
+
+				if (msg != null) {
+                    //Begin an instance of Paxos
+
+                } else {
+                    // No message available, pause for a short time
+                    try {
+                        Thread.sleep(50); // Avoid busy-waiting, adjust time as needed
+                    } catch (InterruptedException e) {
+                        Thread.currentThread().interrupt();
+                        break;
+                    }
+
+			}
 
 
+
+		}
+	}
+
+
+	private class Acceptor extends Thread
+	{	
+		private int maxBID;
+		private int acceptedBID;
+		private Object acceptedVal;
+		private final int acceptorID;
+			
+		//AcceptorID is just the process port
+		private Acceptor(int acceptorID){
+			this.acceptorID = acceptorID;
+			this.maxBID = -1;
+			this.acceptedBID = -1;
+			this.acceptedVal = null;
+		}
+
+		@Override
+		public void run(){
+			while (true) {
+				GCMessage msg = null;
+
+				// Check if there is a message
+				try {
+					msg = gcl.readGCMessage();
+				} catch (InterruptedException e){ // Catch an InterruptedException per the documentation in the doc
+					e.printStackTrace();
+				}
+
+				// Extract the PaxosMessage from the message received, and respond. 
+				PaxosMessage pxmsg = (PaxosMessage)(msg.val);
+				
+
+				switch (pxmsg.getType()){
+					case PROPOSE:
+						System.out.println("Handling PROPOSE message.");
+						break;
+
+					case PROMISE:
+						System.out.println("Handling PROMISE message.");
+						break;
+
+					case REFUSE:
+						System.out.println("Handling REFUSE message.");
+						break;
+
+					case ACCEPT:
+						System.out.println("Handling ACCEPT message.");
+						break;
+
+					case ACCEPTACK:
+						System.out.println("Handling ACCEPTACK message.");
+						break;
+
+					case DENY:
+						System.out.println("Handling DENY message.");
+						break;
+
+					case CONFIRM:
+						System.out.println("Handling CONFIRM message.");
+
+						//Put in incoming queue
+
+						break;
+
+					default:
+						System.out.println("Unknown message type.");
+						break;
+				}
+			}
+
+		}
+	}
 }
-
+}
