@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #TODO set this to where your code and jar file root dir is
-BASEDIR=$HOME/comp512/p2
+BASEDIR=$HOME/comp512p2
 
 #TODO update your group number here in place of XX
-group=xx
+group=20
 
 #TODO Optional
 # this will always generate the same game island. Change the last digits to any number if you want to change it to a different island map. Otherwise leave it as it is.
@@ -17,7 +17,7 @@ export autotesthost=tr-open-01.cs.mcgill.ca
 # Script automatically counts the variables to figure out the number of players.
 export process1=${autotesthost}:401$group
 export process2=${autotesthost}:402$group
-export process3=${autotesthost}:403$group
+#export process3=${autotesthost}:403$group
 #export process4=${autotesthost}:404$group
 #export process5=${autotesthost}:405$group
 #export process6=${autotesthost}:406$group
