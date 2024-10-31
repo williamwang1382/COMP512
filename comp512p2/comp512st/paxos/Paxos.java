@@ -146,7 +146,7 @@ public class Paxos
 		public int getBID() {
 			return BID;
 		}
-
+	
 		public int getBID2() {
 			return BID2;
 		}
