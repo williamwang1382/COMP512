@@ -23,14 +23,16 @@ public class Paxos
 {
 	GCL gcl;
 	FailCheck failCheck;
-	ConcurrentLinkedQueue<GCMessage> outgoing;
-	ConcurrentLinkedQueue<GCMessage> incoming;
+	ConcurrentLinkedQueue<Object> outgoing;
+	ConcurrentLinkedQueue<Object> incoming;
 	final int port;
 	final int majority;
 
 	Proposer proposer;
 
 	int promises;
+	int refuses;
+	int acceptacks;
 	int denies;
 
 
@@ -53,7 +55,10 @@ public class Paxos
 	{
 		// Reset promises and denies
 		promises = 0;
+		refuses = 0;
+		acceptacks = 0;
 		denies = 0;
+
 
 		// This is just a place holder.
 		// Extend this to build whatever Paxos logic you need to make sure the messaging system is total order.
@@ -303,24 +308,98 @@ public class Paxos
 
 					case REFUSE:
 						System.out.println("Handling REFUSE message.");
+
+
+						// If the majority refuse, we need to try again next round with a new ballotID
+						refuses += 1;
+						if (refuses >= majority) {
+
+							promises = 0;
+							refuses = 0;
+							acceptacks = 0;
+							denies = 0;
+
+							// TODO: Determine if this is the right way to create a new ballotID
+							int newID = this.maxBID + 1;
+
+							PaxosMessage newmsg = new PaxosMessage(MsgType.PROPOSE, newID, -1, null, String.valueOf(this.acceptorID));
+							gcl.broadcastMsg(newmsg);
+
+
+						}
+
 						break;
 
 					case ACCEPT:
 						System.out.println("Handling ACCEPT message.");
+
+						// If the ballotID is the same as the promised ballotID, we accept the value
+						if (pxmsg.BID == this.promisedBID){
+							this.promisedBID = pxmsg.BID;
+							this.acceptedBID = pxmsg.BID2;
+							this.acceptedVal = pxmsg.getVal();
+
+							PaxosMessage newmsg = new PaxosMessage(MsgType.ACCEPTACK, this.promisedBID, this.acceptedBID, this.acceptedVal, String.valueOf(this.acceptorID));
+							gcl.sendMsg(newmsg, msg.senderProcess);
+						}
+
+						// If the ballotID is not the same as the promised ballotID, we deny the value
+						else {
+							PaxosMessage newmsg = new PaxosMessage(MsgType.DENY, pxmsg.BID, this.acceptedBID, this.acceptedVal, String.valueOf(this.acceptorID));
+							gcl.sendMsg(newmsg, msg.senderProcess);
+						}
+
+
 						break;
 
 					case ACCEPTACK:
 						System.out.println("Handling ACCEPTACK message.");
+
+						// If we already exceeded majority, we can ignore the rest of the acceptacks to avoid sending out multiple CONFIRM messages
+						if (acceptacks > majority) break;
+
+						acceptacks += 1;
+
+						// If we have majority of acceptacks, we can confirm the value
+						if (acceptacks >= majority){
+							this.promisedBID = pxmsg.BID;
+							this.acceptedBID = pxmsg.BID2;
+							this.acceptedVal = pxmsg.getVal();
+							PaxosMessage newmsg = new PaxosMessage(MsgType.CONFIRM, this.promisedBID, this.acceptedBID, this.acceptedVal, String.valueOf(this.acceptorID));
+							gcl.broadcastMsg(newmsg);
+						}
+
 						break;
 
 					case DENY:
 						System.out.println("Handling DENY message.");
+
+						denies += 1;
+
+						// If we have majority of denies, we need to try again next round with a new ballotID
+						if (denies >= majority) {
+
+							promises = 0;
+							refuses = 0;
+							acceptacks = 0;
+							denies = 0;
+
+							// TODO: Determine if this is the right way to create a new ballotID
+							int newID = this.maxBID + 1;
+							PaxosMessage newmsg = new PaxosMessage(MsgType.PROPOSE, newID, -1, null, String.valueOf(this.acceptorID));
+							gcl.broadcastMsg(newmsg);
+
+
+						}
 						break;
 
 					case CONFIRM:
 						System.out.println("Handling CONFIRM message.");
 
 						//Put in incoming queue
+
+						// TODO: Verify if this is the correct way to handle the confirmed value
+						incoming.add(pxmsg.getVal());
 
 						break;
 
