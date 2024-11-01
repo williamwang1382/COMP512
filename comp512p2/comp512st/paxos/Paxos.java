@@ -264,6 +264,10 @@ public class Paxos
 
 				switch (pxmsg.getType()){
 					case PROPOSE:
+
+						// Check for failures as soon as we receive a PROPOSE message
+						failCheck.checkFailure(FailCheck.FailureType.RECEIVEPROPOSE); 
+
 						System.out.println("Handling PROPOSE message.");
 						int ballotID = pxmsg.getBID();
 						// Ensure that the proposed ballotID is the highest value
@@ -273,6 +277,9 @@ public class Paxos
 							this.maxBID = ballotID;
 							PaxosMessage newmsg = new PaxosMessage(MsgType.PROMISE, this.promisedBID, this.acceptedBID, this.acceptedVal, String.valueOf(this.acceptorID));
 							gcl.sendMsg(newmsg, msg.senderProcess);
+
+							// Check for failures after sending the PROMISE message for leader election
+							failCheck.checkFailure(FailCheck.FailureType.AFTERSENDVOTE);
 							
 						}
 
@@ -281,6 +288,9 @@ public class Paxos
 						else {
 							PaxosMessage newmsg = new PaxosMessage(MsgType.REFUSE, this.promisedBID, this.acceptedBID, this.acceptedVal, String.valueOf(this.acceptorID));
 							gcl.sendMsg(newmsg, msg.senderProcess);
+							
+							// Check for failures after sending the PROMISE message for leader election
+							failCheck.checkFailure(FailCheck.FailureType.AFTERSENDVOTE);
 						}
 
 						break;
@@ -324,6 +334,9 @@ public class Paxos
 
 							PaxosMessage newmsg = new PaxosMessage(MsgType.PROPOSE, newID, -1, null, String.valueOf(this.acceptorID));
 							gcl.broadcastMsg(newmsg);
+							
+							// Check for failures after sending the new PROPOSE message
+							failCheck.checkFailure(FailCheck.FailureType.AFTERSENDPROPOSE);
 
 
 						}
@@ -362,6 +375,10 @@ public class Paxos
 
 						// If we have majority of acceptacks, we can confirm the value
 						if (acceptacks >= majority){
+
+							// Check for failures after receiving an ACCEPTACK messages and becoming leader
+							failCheck.checkFailure(FailCheck.FailureType.AFTERBECOMINGLEADER);
+
 							this.promisedBID = pxmsg.BID;
 							this.acceptedBID = pxmsg.BID2;
 							this.acceptedVal = pxmsg.getVal();
@@ -389,6 +406,9 @@ public class Paxos
 							PaxosMessage newmsg = new PaxosMessage(MsgType.PROPOSE, newID, -1, null, String.valueOf(this.acceptorID));
 							gcl.broadcastMsg(newmsg);
 
+							// Check for failures after sending the new PROPOSE message
+							failCheck.checkFailure(FailCheck.FailureType.AFTERSENDPROPOSE);
+
 
 						}
 						break;
@@ -400,6 +420,9 @@ public class Paxos
 
 						// TODO: Verify if this is the correct way to handle the confirmed value
 						incoming.add(pxmsg.getVal());
+
+						// Check for failures after receiving CONFIRM message and majority accepted the proposed value
+						failCheck.checkFailure(FailCheck.FailureType.AFTERVALUEACCEPT);
 
 						break;
 
