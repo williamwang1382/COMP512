@@ -60,10 +60,10 @@ public class Paxos
 		acceptacks = 0;
 		denies = 0;
 
-	
-		this.log += "Broadcasting\n";
 
-		outgoing.offer(val);
+		// This is just a place holder.
+		// Extend this to build whatever Paxos logic you need to make sure the messaging system is total order.
+		// Here you will have to ensure that the CALL BLOCKS, and is returned ONLY when a majority (and immediately upon majority) of processes have accepted the value.
 		gcl.broadcastMsg(val);
 
 		/*
@@ -420,14 +420,166 @@ public class Paxos
 				
 				switch (pxmsg.getType()){
 					case PROPOSE:
-						promise(pxmsg);
+
+						// Check for failures as soon as we receive a PROPOSE message
+						failCheck.checkFailure(FailCheck.FailureType.RECEIVEPROPOSE); 
+
+						System.out.println("Handling PROPOSE message.");
+						int ballotID = pxmsg.getBID();
+						// Ensure that the proposed ballotID is the highest value
+						// Sends out a PROMISE Paxos message to the proposer thread
+						if (ballotID > this.maxBID){
+							this.promisedBID = ballotID;
+							this.maxBID = ballotID;
+							PaxosMessage newmsg = new PaxosMessage(MsgType.PROMISE, this.promisedBID, this.acceptedBID, this.acceptedVal, String.valueOf(this.acceptorID));
+							gcl.sendMsg(newmsg, msg.senderProcess);
+
+							// Check for failures after sending the PROMISE message for leader election
+							failCheck.checkFailure(FailCheck.FailureType.AFTERSENDVOTE);
+							
+						}
+
+						// Refuses the proposal if the ballotID isn't the highest
+						// Sends out a REFUSE Paxos message to the proposer thread, the refuse contains the maxBallotID for that process
+						else {
+							PaxosMessage newmsg = new PaxosMessage(MsgType.REFUSE, this.promisedBID, this.acceptedBID, this.acceptedVal, String.valueOf(this.acceptorID));
+							gcl.sendMsg(newmsg, msg.senderProcess);
+							
+							// Check for failures after sending the PROMISE message for leader election
+							failCheck.checkFailure(FailCheck.FailureType.AFTERSENDVOTE);
+						}
+
+						break;
+
+					case PROMISE:
+						System.out.println("Handling PROMISE message.");
+
+						// Important to note that once we reach majority votes, we need to ignore the rest of the promises from the threads that have yet to be delivered to avoid sending out multiple ACCEPT messages
+						if (promises > majority) break;
+
+						promises += 1;
+
+						// If we find at least one promise(ballotID, bid2, v'), we need to keep track of it so that we can send accept?(ballotID, v')
+						if (pxmsg.BID > pxmsg.BID2) this.acceptedVal = pxmsg.getVal();
+
+
+						// Check whether we have majority of promises, if so, send out an ACCEPT? message
+						if (promises >= majority){
+							PaxosMessage newmsg = new PaxosMessage(MsgType.ACCEPT, this.promisedBID, this.acceptedBID, this.acceptedVal, String.valueOf(this.acceptorID));
+							gcl.broadcastMsg(newmsg);
+						}
+
+
+						break;
+
+					case REFUSE:
+						System.out.println("Handling REFUSE message.");
+
+
+						// If the majority refuse, we need to try again next round with a new ballotID
+						refuses += 1;
+						if (refuses >= majority) {
+
+							promises = 0;
+							refuses = 0;
+							acceptacks = 0;
+							denies = 0;
+
+							// TODO: Determine if this is the right way to create a new ballotID
+							int newID = this.maxBID + 1;
+
+							PaxosMessage newmsg = new PaxosMessage(MsgType.PROPOSE, newID, -1, null, String.valueOf(this.acceptorID));
+							gcl.broadcastMsg(newmsg);
+							
+							// Check for failures after sending the new PROPOSE message
+							failCheck.checkFailure(FailCheck.FailureType.AFTERSENDPROPOSE);
+
+
+						}
+
+						break;
 
 					case ACCEPT:
-						acceptAcknowledgement(pxmsg);
+						System.out.println("Handling ACCEPT message.");
+
+						// If the ballotID is the same as the promised ballotID, we accept the value
+						if (pxmsg.BID == this.promisedBID){
+							this.promisedBID = pxmsg.BID;
+							this.acceptedBID = pxmsg.BID2;
+							this.acceptedVal = pxmsg.getVal();
+
+							PaxosMessage newmsg = new PaxosMessage(MsgType.ACCEPTACK, this.promisedBID, this.acceptedBID, this.acceptedVal, String.valueOf(this.acceptorID));
+							gcl.sendMsg(newmsg, msg.senderProcess);
+						}
+
+						// If the ballotID is not the same as the promised ballotID, we deny the value
+						else {
+							PaxosMessage newmsg = new PaxosMessage(MsgType.DENY, pxmsg.BID, this.acceptedBID, this.acceptedVal, String.valueOf(this.acceptorID));
+							gcl.sendMsg(newmsg, msg.senderProcess);
+						}
+
+
+						break;
+
+					case ACCEPTACK:
+						System.out.println("Handling ACCEPTACK message.");
+
+						// If we already exceeded majority, we can ignore the rest of the acceptacks to avoid sending out multiple CONFIRM messages
+						if (acceptacks > majority) break;
+
+						acceptacks += 1;
+
+						// If we have majority of acceptacks, we can confirm the value
+						if (acceptacks >= majority){
+
+							// Check for failures after receiving an ACCEPTACK messages and becoming leader
+							failCheck.checkFailure(FailCheck.FailureType.AFTERBECOMINGLEADER);
+
+							this.promisedBID = pxmsg.BID;
+							this.acceptedBID = pxmsg.BID2;
+							this.acceptedVal = pxmsg.getVal();
+							PaxosMessage newmsg = new PaxosMessage(MsgType.CONFIRM, this.promisedBID, this.acceptedBID, this.acceptedVal, String.valueOf(this.acceptorID));
+							gcl.broadcastMsg(newmsg);
+						}
+
+						break;
+
+					case DENY:
+						System.out.println("Handling DENY message.");
+
+						denies += 1;
+
+						// If we have majority of denies, we need to try again next round with a new ballotID
+						if (denies >= majority) {
+
+							promises = 0;
+							refuses = 0;
+							acceptacks = 0;
+							denies = 0;
+
+							// TODO: Determine if this is the right way to create a new ballotID
+							int newID = this.maxBID + 1;
+							PaxosMessage newmsg = new PaxosMessage(MsgType.PROPOSE, newID, -1, null, String.valueOf(this.acceptorID));
+							gcl.broadcastMsg(newmsg);
+
+							// Check for failures after sending the new PROPOSE message
+							failCheck.checkFailure(FailCheck.FailureType.AFTERSENDPROPOSE);
+
+
+						}
 						break;
 
 					case CONFIRM:
-						confirm(pxmsg);
+						System.out.println("Handling CONFIRM message.");
+
+						//Put in incoming queue
+
+						// TODO: Verify if this is the correct way to handle the confirmed value
+						incoming.add(pxmsg.getVal());
+
+						// Check for failures after receiving CONFIRM message and majority accepted the proposed value
+						failCheck.checkFailure(FailCheck.FailureType.AFTERVALUEACCEPT);
+
 						break;
 
 					default:
