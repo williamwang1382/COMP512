@@ -1,0 +1,349 @@
+Nov 03, 2024 1:04:08.246874454 PM comp512st.tests.TreasureIslandAppAuto main INFO: Started with arguments : [open-gpu-1.cs.mcgill.ca:40220, open-gpu-1.cs.mcgill.ca:40120,open-gpu-1.cs.mcgill.ca:40220, game-20-99, 2, 2, 20, 1000, 123452]
+Nov 03, 2024 1:04:08.253968376 PM comp512.utils.FailCheck <init> INFO: Initializing failure check emulation setup....
+Nov 03, 2024 1:04:08.278840072 PM comp512.gcl.GCL <init> INFO: Host open-gpu-1.cs.mcgill.ca/10.69.38.101:40220
+Nov 03, 2024 1:04:08.279224946 PM comp512.gcl.GCL <init> INFO: Initializing outbox despatcher threads.
+Nov 03, 2024 1:04:08.280252595 PM comp512.gcl.GCL$GCLOutBoxDespatcher run INFO: open-gpu-1.cs.mcgill.ca:40120: Starting outbox despatch thread for process.
+Nov 03, 2024 1:04:08.280252371 PM comp512.gcl.GCL$GCLOutBoxDespatcher run INFO: open-gpu-1.cs.mcgill.ca:40220: Starting outbox despatch thread for process.
+Nov 03, 2024 1:04:08.313360534 PM comp512.ti.TreasureIsland <init> INFO: TIMONOCHROME is set to true, colors would be disabled.
+Nov 03, 2024 1:04:08.313671510 PM comp512.ti.TreasureIsland <init> INFO: Treasure Island initialized.
+Nov 03, 2024 1:04:08.329338553 PM comp512st.tests.TreasureIslandAppAuto$AutoMoveGenerator <init> INFO: AutoMoveGenerator setup maxmoves = 20, interval = 1000, randseed = 123452, failmode = null
+Nov 03, 2024 1:04:08.329910742 PM comp512st.tests.TreasureIslandAppAuto$AutoMoveGenerator nextMove FINE: moveid = 3
+Nov 03, 2024 1:04:08.330228035 PM comp512st.tests.TreasureIslandAppAuto main FINE: cmd is : D
+Nov 03, 2024 1:04:08.330565648 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : [Ljava.lang.Object;@69d0a921
+Nov 03, 2024 1:04:08.331025256 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. [Ljava.lang.Object;@69d0a921
+Nov 03, 2024 1:04:08.331575644 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40220. [Ljava.lang.Object;@69d0a921
+Nov 03, 2024 1:04:08.331846049 PM comp512st.tests.TreasureIslandAppAuto$AutoMoveGenerator nextMove FINE: moveid = 16
+Nov 03, 2024 1:04:08.332964763 PM comp512.gcl.GCL$InboxListener run INFO: Network connection request from  /10.69.38.101
+Nov 03, 2024 1:04:08.338874971 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@69d0a921]
+Nov 03, 2024 1:04:08.339345027 PM comp512.gcl.GCL$InboxListener run INFO: open-gpu-1.cs.mcgill.ca:40220: Input stream set up for this process to receive incoming messages. Inet: /10.69.38.101
+Nov 03, 2024 1:04:08.338875002 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@69d0a921]
+Nov 03, 2024 1:04:08.339711178 PM comp512.gcl.GCL$InboxListener run INFO: Network connection request from  /10.69.38.101
+Nov 03, 2024 1:04:08.339807323 PM comp512.gcl.GCL$GCLInbox run INFO: open-gpu-1.cs.mcgill.ca:40220: Starting an inBox thread to receive messages from this process.
+Nov 03, 2024 1:04:08.342746384 PM comp512.gcl.GCL$InboxListener run INFO: open-gpu-1.cs.mcgill.ca:40120: Input stream set up for this process to receive incoming messages. Inet: /10.69.38.101
+Nov 03, 2024 1:04:08.343267542 PM comp512.gcl.GCL$GCLInbox run INFO: open-gpu-1.cs.mcgill.ca:40120: Starting an inBox thread to receive messages from this process.
+Nov 03, 2024 1:04:08.358580367 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@4c9c2e39]
+Nov 03, 2024 1:04:08.359034126 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@4c9c2e39]
+Nov 03, 2024 1:04:08.362625046 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40120: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@4de45cd]
+Nov 03, 2024 1:04:08.362997732 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@4de45cd]
+Nov 03, 2024 1:04:08.363256731 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[1, U]
+Nov 03, 2024 1:04:08.363654224 PM comp512.ti.TreasureIsland move INFO: Move request: player number 1 direction U
+Nov 03, 2024 1:04:09.330470250 PM comp512st.tests.TreasureIslandAppAuto main FINE: cmd is : R
+Nov 03, 2024 1:04:09.330979582 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : [Ljava.lang.Object;@277050dc
+Nov 03, 2024 1:04:09.331244410 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. [Ljava.lang.Object;@277050dc
+Nov 03, 2024 1:04:09.331452386 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40220. [Ljava.lang.Object;@277050dc
+Nov 03, 2024 1:04:09.331488567 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@277050dc]
+Nov 03, 2024 1:04:09.331654405 PM comp512st.tests.TreasureIslandAppAuto$AutoMoveGenerator nextMove FINE: moveid = 13
+Nov 03, 2024 1:04:09.331729863 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@277050dc]
+Nov 03, 2024 1:04:09.332638832 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@791fab9e]
+Nov 03, 2024 1:04:09.332882219 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@791fab9e]
+Nov 03, 2024 1:04:09.333079435 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[2, R]
+Nov 03, 2024 1:04:09.333322457 PM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction R
+Nov 03, 2024 1:04:09.335383648 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40120: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@a19ab26]
+Nov 03, 2024 1:04:09.335644599 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@a19ab26]
+Nov 03, 2024 1:04:09.335878379 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[1, R]
+Nov 03, 2024 1:04:09.336035267 PM comp512.ti.TreasureIsland move INFO: Move request: player number 1 direction R
+Nov 03, 2024 1:04:10.330532019 PM comp512st.tests.TreasureIslandAppAuto main FINE: cmd is : U
+Nov 03, 2024 1:04:10.330976870 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : [Ljava.lang.Object;@5c29bfd
+Nov 03, 2024 1:04:10.331193880 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. [Ljava.lang.Object;@5c29bfd
+Nov 03, 2024 1:04:10.331420349 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40220. [Ljava.lang.Object;@5c29bfd
+Nov 03, 2024 1:04:10.331609703 PM comp512st.tests.TreasureIslandAppAuto$AutoMoveGenerator nextMove FINE: moveid = 0
+Nov 03, 2024 1:04:10.331460058 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@5c29bfd]
+Nov 03, 2024 1:04:10.331671156 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@5c29bfd]
+Nov 03, 2024 1:04:10.332505601 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@7d1a018b]
+Nov 03, 2024 1:04:10.332757517 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@7d1a018b]
+Nov 03, 2024 1:04:10.332939705 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[2, U]
+Nov 03, 2024 1:04:10.333159372 PM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction U
+Nov 03, 2024 1:04:10.335161961 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40120: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@e262ebd]
+Nov 03, 2024 1:04:10.335398727 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@e262ebd]
+Nov 03, 2024 1:04:10.335558528 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[1, D]
+Nov 03, 2024 1:04:10.335708345 PM comp512.ti.TreasureIsland move INFO: Move request: player number 1 direction D
+Nov 03, 2024 1:04:10.335974789 PM comp512.ti.TreasureIsland move WARNING: Cannot move character A into a barrier. Not a legal move.
+Nov 03, 2024 1:04:11.331191800 PM comp512st.tests.TreasureIslandAppAuto main FINE: cmd is : D
+Nov 03, 2024 1:04:11.331525287 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : [Ljava.lang.Object;@7aec35a
+Nov 03, 2024 1:04:11.331728422 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. [Ljava.lang.Object;@7aec35a
+Nov 03, 2024 1:04:11.331914937 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40220. [Ljava.lang.Object;@7aec35a
+Nov 03, 2024 1:04:11.332140582 PM comp512st.tests.TreasureIslandAppAuto$AutoMoveGenerator nextMove FINE: moveid = 17
+Nov 03, 2024 1:04:11.331973952 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@7aec35a]
+Nov 03, 2024 1:04:11.332216958 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@7aec35a]
+Nov 03, 2024 1:04:11.332902570 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@173da87]
+Nov 03, 2024 1:04:11.333146284 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@173da87]
+Nov 03, 2024 1:04:11.333300861 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[2, D]
+Nov 03, 2024 1:04:11.333432756 PM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction D
+Nov 03, 2024 1:04:11.334403203 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40120: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@4b24a11d]
+Nov 03, 2024 1:04:11.334625464 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@4b24a11d]
+Nov 03, 2024 1:04:11.334773755 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[1, L]
+Nov 03, 2024 1:04:11.334898147 PM comp512.ti.TreasureIsland move INFO: Move request: player number 1 direction L
+Nov 03, 2024 1:04:12.331716761 PM comp512st.tests.TreasureIslandAppAuto main FINE: cmd is : L
+Nov 03, 2024 1:04:12.332090652 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : [Ljava.lang.Object;@67424e82
+Nov 03, 2024 1:04:12.332293137 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. [Ljava.lang.Object;@67424e82
+Nov 03, 2024 1:04:12.332444211 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40220. [Ljava.lang.Object;@67424e82
+Nov 03, 2024 1:04:12.332517104 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@67424e82]
+Nov 03, 2024 1:04:12.332650388 PM comp512st.tests.TreasureIslandAppAuto$AutoMoveGenerator nextMove FINE: moveid = 14
+Nov 03, 2024 1:04:12.332726592 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@67424e82]
+Nov 03, 2024 1:04:12.333541252 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@2cb3d176]
+Nov 03, 2024 1:04:12.333768619 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@2cb3d176]
+Nov 03, 2024 1:04:12.333957805 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[2, L]
+Nov 03, 2024 1:04:12.334101595 PM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction L
+Nov 03, 2024 1:04:12.334653396 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40120: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@3da27599]
+Nov 03, 2024 1:04:12.334849087 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@3da27599]
+Nov 03, 2024 1:04:12.334989607 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[1, L]
+Nov 03, 2024 1:04:12.335137665 PM comp512.ti.TreasureIsland move INFO: Move request: player number 1 direction L
+Nov 03, 2024 1:04:12.335514309 PM comp512.ti.TreasureIsland move INFO: Player A got treasure points 7
+Nov 03, 2024 1:04:13.331544399 PM comp512st.tests.TreasureIslandAppAuto main FINE: cmd is : U
+Nov 03, 2024 1:04:13.331858011 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : [Ljava.lang.Object;@42110406
+Nov 03, 2024 1:04:13.332003051 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. [Ljava.lang.Object;@42110406
+Nov 03, 2024 1:04:13.332169337 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40220. [Ljava.lang.Object;@42110406
+Nov 03, 2024 1:04:13.332233470 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@42110406]
+Nov 03, 2024 1:04:13.332373651 PM comp512st.tests.TreasureIslandAppAuto$AutoMoveGenerator nextMove FINE: moveid = 4
+Nov 03, 2024 1:04:13.332436915 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@42110406]
+Nov 03, 2024 1:04:13.333185080 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@28f4cc25]
+Nov 03, 2024 1:04:13.333377698 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@28f4cc25]
+Nov 03, 2024 1:04:13.333520006 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[2, U]
+Nov 03, 2024 1:04:13.333654886 PM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction U
+Nov 03, 2024 1:04:13.335096731 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40120: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@7a25a990]
+Nov 03, 2024 1:04:13.335326867 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@7a25a990]
+Nov 03, 2024 1:04:13.335477752 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[1, U]
+Nov 03, 2024 1:04:13.335600757 PM comp512.ti.TreasureIsland move INFO: Move request: player number 1 direction U
+Nov 03, 2024 1:04:14.332230836 PM comp512st.tests.TreasureIslandAppAuto main FINE: cmd is : D
+Nov 03, 2024 1:04:14.332528640 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : [Ljava.lang.Object;@531d72ca
+Nov 03, 2024 1:04:14.332704350 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. [Ljava.lang.Object;@531d72ca
+Nov 03, 2024 1:04:14.332853976 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40220. [Ljava.lang.Object;@531d72ca
+Nov 03, 2024 1:04:14.332905823 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@531d72ca]
+Nov 03, 2024 1:04:14.333049256 PM comp512st.tests.TreasureIslandAppAuto$AutoMoveGenerator nextMove FINE: moveid = 2
+Nov 03, 2024 1:04:14.333131162 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@531d72ca]
+Nov 03, 2024 1:04:14.333894093 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@54f86e9]
+Nov 03, 2024 1:04:14.334144284 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@54f86e9]
+Nov 03, 2024 1:04:14.334311286 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[2, D]
+Nov 03, 2024 1:04:14.334447340 PM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction D
+Nov 03, 2024 1:04:14.335364139 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40120: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@454923af]
+Nov 03, 2024 1:04:14.335611083 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@454923af]
+Nov 03, 2024 1:04:14.335767236 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[1, L]
+Nov 03, 2024 1:04:14.335879867 PM comp512.ti.TreasureIsland move INFO: Move request: player number 1 direction L
+Nov 03, 2024 1:04:15.332833788 PM comp512st.tests.TreasureIslandAppAuto main FINE: cmd is : R
+Nov 03, 2024 1:04:15.333151300 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : [Ljava.lang.Object;@22d8cfe0
+Nov 03, 2024 1:04:15.333324283 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. [Ljava.lang.Object;@22d8cfe0
+Nov 03, 2024 1:04:15.333557832 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40220. [Ljava.lang.Object;@22d8cfe0
+Nov 03, 2024 1:04:15.333733863 PM comp512st.tests.TreasureIslandAppAuto$AutoMoveGenerator nextMove FINE: moveid = 11
+Nov 03, 2024 1:04:15.333615309 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@22d8cfe0]
+Nov 03, 2024 1:04:15.333813578 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@22d8cfe0]
+Nov 03, 2024 1:04:15.334503247 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@1a77d325]
+Nov 03, 2024 1:04:15.334691098 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@1a77d325]
+Nov 03, 2024 1:04:15.334846777 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[2, R]
+Nov 03, 2024 1:04:15.334954667 PM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction R
+Nov 03, 2024 1:04:15.335757531 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40120: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@2b0b5e52]
+Nov 03, 2024 1:04:15.335974061 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@2b0b5e52]
+Nov 03, 2024 1:04:15.336098825 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[1, U]
+Nov 03, 2024 1:04:15.336203910 PM comp512.ti.TreasureIsland move INFO: Move request: player number 1 direction U
+Nov 03, 2024 1:04:16.333235361 PM comp512st.tests.TreasureIslandAppAuto main FINE: cmd is : D
+Nov 03, 2024 1:04:16.333501262 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : [Ljava.lang.Object;@579bb367
+Nov 03, 2024 1:04:16.333620560 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. [Ljava.lang.Object;@579bb367
+Nov 03, 2024 1:04:16.333738189 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40220. [Ljava.lang.Object;@579bb367
+Nov 03, 2024 1:04:16.333856013 PM comp512st.tests.TreasureIslandAppAuto$AutoMoveGenerator nextMove FINE: moveid = 12
+Nov 03, 2024 1:04:16.333793232 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@579bb367]
+Nov 03, 2024 1:04:16.333931359 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@579bb367]
+Nov 03, 2024 1:04:16.334764670 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@28fd897c]
+Nov 03, 2024 1:04:16.334967953 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@28fd897c]
+Nov 03, 2024 1:04:16.335138712 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[2, D]
+Nov 03, 2024 1:04:16.335258869 PM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction D
+Nov 03, 2024 1:04:16.335410696 PM comp512.ti.TreasureIsland move INFO: Player B got treasure points 4
+Nov 03, 2024 1:04:16.336439578 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40120: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@52bf817]
+Nov 03, 2024 1:04:16.336633152 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@52bf817]
+Nov 03, 2024 1:04:16.336795450 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[1, D]
+Nov 03, 2024 1:04:16.336930536 PM comp512.ti.TreasureIsland move INFO: Move request: player number 1 direction D
+Nov 03, 2024 1:04:17.334247371 PM comp512st.tests.TreasureIslandAppAuto main FINE: cmd is : R
+Nov 03, 2024 1:04:17.334542489 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : [Ljava.lang.Object;@1de0aca6
+Nov 03, 2024 1:04:17.334693783 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. [Ljava.lang.Object;@1de0aca6
+Nov 03, 2024 1:04:17.334856235 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40220. [Ljava.lang.Object;@1de0aca6
+Nov 03, 2024 1:04:17.334890546 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@1de0aca6]
+Nov 03, 2024 1:04:17.335084300 PM comp512st.tests.TreasureIslandAppAuto$AutoMoveGenerator nextMove FINE: moveid = 9
+Nov 03, 2024 1:04:17.335097530 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@1de0aca6]
+Nov 03, 2024 1:04:17.335907261 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@26e6eda2]
+Nov 03, 2024 1:04:17.336099355 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@26e6eda2]
+Nov 03, 2024 1:04:17.336246547 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[2, R]
+Nov 03, 2024 1:04:17.336356868 PM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction R
+Nov 03, 2024 1:04:17.336836232 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40120: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@5295a80b]
+Nov 03, 2024 1:04:17.337018126 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@5295a80b]
+Nov 03, 2024 1:04:17.337135127 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[1, L]
+Nov 03, 2024 1:04:17.337235748 PM comp512.ti.TreasureIsland move INFO: Move request: player number 1 direction L
+Nov 03, 2024 1:04:18.334645414 PM comp512st.tests.TreasureIslandAppAuto main FINE: cmd is : L
+Nov 03, 2024 1:04:18.334944588 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : [Ljava.lang.Object;@255316f2
+Nov 03, 2024 1:04:18.335171272 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. [Ljava.lang.Object;@255316f2
+Nov 03, 2024 1:04:18.335454892 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40220. [Ljava.lang.Object;@255316f2
+Nov 03, 2024 1:04:18.335518594 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@255316f2]
+Nov 03, 2024 1:04:18.335708957 PM comp512st.tests.TreasureIslandAppAuto$AutoMoveGenerator nextMove FINE: moveid = 3
+Nov 03, 2024 1:04:18.335746421 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@255316f2]
+Nov 03, 2024 1:04:18.336303365 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@5f675f59]
+Nov 03, 2024 1:04:18.336319711 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40120: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@5e4dadad]
+Nov 03, 2024 1:04:18.336532588 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@5f675f59]
+Nov 03, 2024 1:04:18.336813324 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[2, L]
+Nov 03, 2024 1:04:18.336914693 PM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction L
+Nov 03, 2024 1:04:18.337036759 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@5e4dadad]
+Nov 03, 2024 1:04:18.337154387 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[1, U]
+Nov 03, 2024 1:04:18.337251942 PM comp512.ti.TreasureIsland move INFO: Move request: player number 1 direction U
+Nov 03, 2024 1:04:19.335131936 PM comp512st.tests.TreasureIslandAppAuto main FINE: cmd is : L
+Nov 03, 2024 1:04:19.335376986 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : [Ljava.lang.Object;@41906a77
+Nov 03, 2024 1:04:19.335569275 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. [Ljava.lang.Object;@41906a77
+Nov 03, 2024 1:04:19.335782802 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40220. [Ljava.lang.Object;@41906a77
+Nov 03, 2024 1:04:19.335815799 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@41906a77]
+Nov 03, 2024 1:04:19.336009067 PM comp512st.tests.TreasureIslandAppAuto$AutoMoveGenerator nextMove FINE: moveid = 12
+Nov 03, 2024 1:04:19.336078038 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@41906a77]
+Nov 03, 2024 1:04:19.336680808 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40120: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@2f4581f8]
+Nov 03, 2024 1:04:19.336869188 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@7b2d516b]
+Nov 03, 2024 1:04:19.336930415 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@2f4581f8]
+Nov 03, 2024 1:04:19.337161690 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[1, R]
+Nov 03, 2024 1:04:19.337269061 PM comp512.ti.TreasureIsland move INFO: Move request: player number 1 direction R
+Nov 03, 2024 1:04:19.337399186 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@7b2d516b]
+Nov 03, 2024 1:04:19.337495575 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[2, L]
+Nov 03, 2024 1:04:19.337588406 PM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction L
+Nov 03, 2024 1:04:20.335514675 PM comp512st.tests.TreasureIslandAppAuto main FINE: cmd is : R
+Nov 03, 2024 1:04:20.335821622 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : [Ljava.lang.Object;@4b9af9a9
+Nov 03, 2024 1:04:20.336049816 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. [Ljava.lang.Object;@4b9af9a9
+Nov 03, 2024 1:04:20.336313467 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40220. [Ljava.lang.Object;@4b9af9a9
+Nov 03, 2024 1:04:20.336359379 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@4b9af9a9]
+Nov 03, 2024 1:04:20.336582824 PM comp512st.tests.TreasureIslandAppAuto$AutoMoveGenerator nextMove FINE: moveid = 16
+Nov 03, 2024 1:04:20.336611479 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@4b9af9a9]
+Nov 03, 2024 1:04:20.337147442 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40120: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@75742f47]
+Nov 03, 2024 1:04:20.337156273 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@3fdf811b]
+Nov 03, 2024 1:04:20.337334291 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@75742f47]
+Nov 03, 2024 1:04:20.337571735 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[1, D]
+Nov 03, 2024 1:04:20.337672066 PM comp512.ti.TreasureIsland move INFO: Move request: player number 1 direction D
+Nov 03, 2024 1:04:20.337792554 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@3fdf811b]
+Nov 03, 2024 1:04:20.337898386 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[2, R]
+Nov 03, 2024 1:04:20.337990234 PM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction R
+Nov 03, 2024 1:04:21.336055055 PM comp512st.tests.TreasureIslandAppAuto main FINE: cmd is : R
+Nov 03, 2024 1:04:21.336565255 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : [Ljava.lang.Object;@5387f9e0
+Nov 03, 2024 1:04:21.336822835 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. [Ljava.lang.Object;@5387f9e0
+Nov 03, 2024 1:04:21.337051572 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40220. [Ljava.lang.Object;@5387f9e0
+Nov 03, 2024 1:04:21.337197318 PM comp512st.tests.TreasureIslandAppAuto$AutoMoveGenerator nextMove FINE: moveid = 0
+Nov 03, 2024 1:04:21.337101191 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@5387f9e0]
+Nov 03, 2024 1:04:21.337233974 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@5387f9e0]
+Nov 03, 2024 1:04:21.337739605 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40120: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@a5e1412]
+Nov 03, 2024 1:04:21.337897602 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@a5e1412]
+Nov 03, 2024 1:04:21.338012255 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[1, U]
+Nov 03, 2024 1:04:21.338122630 PM comp512.ti.TreasureIsland move INFO: Move request: player number 1 direction U
+Nov 03, 2024 1:04:21.337905154 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@2e45f0bf]
+Nov 03, 2024 1:04:21.338408720 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@2e45f0bf]
+Nov 03, 2024 1:04:21.338517384 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[2, R]
+Nov 03, 2024 1:04:21.338615520 PM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction R
+Nov 03, 2024 1:04:22.336412029 PM comp512st.tests.TreasureIslandAppAuto main FINE: cmd is : U
+Nov 03, 2024 1:04:22.336762963 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : [Ljava.lang.Object;@6e5e91e4
+Nov 03, 2024 1:04:22.336927115 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. [Ljava.lang.Object;@6e5e91e4
+Nov 03, 2024 1:04:22.337035678 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40220. [Ljava.lang.Object;@6e5e91e4
+Nov 03, 2024 1:04:22.337140791 PM comp512st.tests.TreasureIslandAppAuto$AutoMoveGenerator nextMove FINE: moveid = 10
+Nov 03, 2024 1:04:22.337084547 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@6e5e91e4]
+Nov 03, 2024 1:04:22.337140434 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40120: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@39cdf031]
+Nov 03, 2024 1:04:22.337576945 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@39cdf031]
+Nov 03, 2024 1:04:22.337676476 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[1, L]
+Nov 03, 2024 1:04:22.337792610 PM comp512.ti.TreasureIsland move INFO: Move request: player number 1 direction L
+Nov 03, 2024 1:04:22.337192983 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@6e5e91e4]
+Nov 03, 2024 1:04:22.338183469 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@4b3dffb9]
+Nov 03, 2024 1:04:22.338304369 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@4b3dffb9]
+Nov 03, 2024 1:04:22.338400779 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[2, U]
+Nov 03, 2024 1:04:22.338478817 PM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction U
+Nov 03, 2024 1:04:23.336338307 PM comp512st.tests.TreasureIslandAppAuto main FINE: cmd is : R
+Nov 03, 2024 1:04:23.336615885 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : [Ljava.lang.Object;@2cdf8d8a
+Nov 03, 2024 1:04:23.336776342 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. [Ljava.lang.Object;@2cdf8d8a
+Nov 03, 2024 1:04:23.337028906 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40220. [Ljava.lang.Object;@2cdf8d8a
+Nov 03, 2024 1:04:23.337063137 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@2cdf8d8a]
+Nov 03, 2024 1:04:23.337223059 PM comp512st.tests.TreasureIslandAppAuto$AutoMoveGenerator nextMove FINE: moveid = 13
+Nov 03, 2024 1:04:23.337570248 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40120: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@3a84ecb1]
+Nov 03, 2024 1:04:23.337268017 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@2cdf8d8a]
+Nov 03, 2024 1:04:23.337791964 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@3a84ecb1]
+Nov 03, 2024 1:04:23.338031529 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[1, R]
+Nov 03, 2024 1:04:23.338143015 PM comp512.ti.TreasureIsland move INFO: Move request: player number 1 direction R
+Nov 03, 2024 1:04:23.338043966 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@5a8a49bc]
+Nov 03, 2024 1:04:23.338431883 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@5a8a49bc]
+Nov 03, 2024 1:04:23.338573408 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[2, R]
+Nov 03, 2024 1:04:23.338690339 PM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction R
+Nov 03, 2024 1:04:24.336692417 PM comp512st.tests.TreasureIslandAppAuto main FINE: cmd is : L
+Nov 03, 2024 1:04:24.337004903 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : [Ljava.lang.Object;@30946e09
+Nov 03, 2024 1:04:24.337192173 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. [Ljava.lang.Object;@30946e09
+Nov 03, 2024 1:04:24.337388727 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40220. [Ljava.lang.Object;@30946e09
+Nov 03, 2024 1:04:24.337574414 PM comp512st.tests.TreasureIslandAppAuto$AutoMoveGenerator nextMove FINE: moveid = 17
+Nov 03, 2024 1:04:24.337422941 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@30946e09]
+Nov 03, 2024 1:04:24.337623662 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@30946e09]
+Nov 03, 2024 1:04:24.337944209 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40120: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@6edee2b1]
+Nov 03, 2024 1:04:24.338209543 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@199edcaf]
+Nov 03, 2024 1:04:24.338219799 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@6edee2b1]
+Nov 03, 2024 1:04:24.338446012 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[1, R]
+Nov 03, 2024 1:04:24.338552581 PM comp512.ti.TreasureIsland move INFO: Move request: player number 1 direction R
+Nov 03, 2024 1:04:24.338689255 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@199edcaf]
+Nov 03, 2024 1:04:24.338777276 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[2, L]
+Nov 03, 2024 1:04:24.338865177 PM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction L
+Nov 03, 2024 1:04:25.336930516 PM comp512st.tests.TreasureIslandAppAuto main FINE: cmd is : U
+Nov 03, 2024 1:04:25.337159456 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : [Ljava.lang.Object;@5cb0d902
+Nov 03, 2024 1:04:25.337280696 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. [Ljava.lang.Object;@5cb0d902
+Nov 03, 2024 1:04:25.337405943 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40220. [Ljava.lang.Object;@5cb0d902
+Nov 03, 2024 1:04:25.337448993 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@5cb0d902]
+Nov 03, 2024 1:04:25.337547159 PM comp512st.tests.TreasureIslandAppAuto$AutoMoveGenerator nextMove FINE: moveid = 3
+Nov 03, 2024 1:04:25.337604130 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@5cb0d902]
+Nov 03, 2024 1:04:25.338416445 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40120: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@14da85fc]
+Nov 03, 2024 1:04:25.338420502 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@185f172b]
+Nov 03, 2024 1:04:25.338610686 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@14da85fc]
+Nov 03, 2024 1:04:25.338845783 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[1, L]
+Nov 03, 2024 1:04:25.338928029 PM comp512.ti.TreasureIsland move INFO: Move request: player number 1 direction L
+Nov 03, 2024 1:04:25.339033316 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@185f172b]
+Nov 03, 2024 1:04:25.339111741 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[2, U]
+Nov 03, 2024 1:04:25.339193253 PM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction U
+Nov 03, 2024 1:04:26.337364872 PM comp512st.tests.TreasureIslandAppAuto main FINE: cmd is : R
+Nov 03, 2024 1:04:26.337618250 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : [Ljava.lang.Object;@46fbb2c1
+Nov 03, 2024 1:04:26.337747882 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. [Ljava.lang.Object;@46fbb2c1
+Nov 03, 2024 1:04:26.337870758 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40220. [Ljava.lang.Object;@46fbb2c1
+Nov 03, 2024 1:04:26.337905082 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@46fbb2c1]
+Nov 03, 2024 1:04:26.338020276 PM comp512st.tests.TreasureIslandAppAuto$AutoMoveGenerator nextMove FINE: moveid = 13
+Nov 03, 2024 1:04:26.338139095 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@46fbb2c1]
+Nov 03, 2024 1:04:26.338758940 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40120: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@4240b32e]
+Nov 03, 2024 1:04:26.338802490 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@3cbbe3ae]
+Nov 03, 2024 1:04:26.338924064 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@4240b32e]
+Nov 03, 2024 1:04:26.339146900 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[1, U]
+Nov 03, 2024 1:04:26.339228146 PM comp512.ti.TreasureIsland move INFO: Move request: player number 1 direction U
+Nov 03, 2024 1:04:26.339333822 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@3cbbe3ae]
+Nov 03, 2024 1:04:26.339497016 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[2, R]
+Nov 03, 2024 1:04:26.339568255 PM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction R
+Nov 03, 2024 1:04:27.337699046 PM comp512st.tests.TreasureIslandAppAuto main FINE: cmd is : R
+Nov 03, 2024 1:04:27.337924589 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : [Ljava.lang.Object;@1698c449
+Nov 03, 2024 1:04:27.338089605 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. [Ljava.lang.Object;@1698c449
+Nov 03, 2024 1:04:27.338246626 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40220. [Ljava.lang.Object;@1698c449
+Nov 03, 2024 1:04:27.338430557 PM comp512st.tests.TreasureIslandAppAuto$AutoMoveGenerator nextMove FINE: moveid = 5
+Nov 03, 2024 1:04:27.338268780 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@1698c449]
+Nov 03, 2024 1:04:27.338503868 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@1698c449]
+Nov 03, 2024 1:04:27.339026396 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40120: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@5f3c2eb3]
+Nov 03, 2024 1:04:27.339078482 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@34f48a2c]
+Nov 03, 2024 1:04:27.339177559 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:[Ljava.lang.Object;@5f3c2eb3]
+Nov 03, 2024 1:04:27.339388059 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[1, R]
+Nov 03, 2024 1:04:27.339466381 PM comp512.ti.TreasureIsland move INFO: Move request: player number 1 direction R
+Nov 03, 2024 1:04:27.339563983 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:[Ljava.lang.Object;@34f48a2c]
+Nov 03, 2024 1:04:27.339631026 PM comp512st.tests.TreasureIslandAppAuto run FINE: Received :[2, R]
+Nov 03, 2024 1:04:27.339695168 PM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction R
+Nov 03, 2024 1:04:28.337997817 PM comp512st.tests.TreasureIslandAppAuto main FINE: cmd is : E
+Nov 03, 2024 1:04:28.338266217 PM comp512st.tests.TreasureIslandAppAuto main INFO: Done with all my moves ...
+Nov 03, 2024 1:04:34.339295758 PM comp512st.tests.TreasureIslandAppAuto main INFO: Shutting down Paxos
+Nov 03, 2024 1:04:34.339508550 PM comp512.gcl.GCL shutdownGCL INFO: GCL Shutdown request received.
+Nov 03, 2024 1:04:34.339614791 PM comp512.gcl.GCL$InboxListener shutdown INFO: Received request to shutdown GCL Inbox listener thread.
+Nov 03, 2024 1:04:34.339910351 PM comp512.gcl.GCL$InboxListener run INFO: GCL Inbox listener is now shutdown. We will not be accepting new incoming connections anymore.
+Nov 03, 2024 1:04:34.340183198 PM comp512.gcl.GCL shutdownGCL INFO: Inbox listener thread is now shutdown.
+Nov 03, 2024 1:04:34.340368426 PM comp512.gcl.GCL shutdownGCL INFO: Initiating broadcast of CLOSE message to all my outbound connections.
+Nov 03, 2024 1:04:34.340594889 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:CLOSE:val:null]
+Nov 03, 2024 1:04:34.340724336 PM comp512.gcl.GCL$GCLOutBoxDespatcher shutdown INFO: open-gpu-1.cs.mcgill.ca:40220: Request initiated to shutdown the message despatcher thread for this process. The thread is currently alive.
+Nov 03, 2024 1:04:34.340829456 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40120: Received a message from. message: [senderProcess:CLOSE:val:null]
+Nov 03, 2024 1:04:34.340594896 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:CLOSE:val:null]
+Nov 03, 2024 1:04:34.340842085 PM comp512.gcl.GCL$GCLOutBoxDespatcher run INFO: open-gpu-1.cs.mcgill.ca:40120: Detected CLOSE marker in the outgoing message. I am shutting down after this.
+Nov 03, 2024 1:04:34.341198272 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:CLOSE:val:null]
+Nov 03, 2024 1:04:34.341288570 PM comp512.gcl.GCL$GCLInbox run INFO: open-gpu-1.cs.mcgill.ca:40220: Is closing connection. I will not get anymore messages from them.
+Nov 03, 2024 1:04:34.340986331 PM comp512.gcl.GCL$GCLInbox run INFO: open-gpu-1.cs.mcgill.ca:40120: Is closing connection. I will not get anymore messages from them.
+Nov 03, 2024 1:04:34.341123796 PM comp512.gcl.GCL$GCLOutBoxDespatcher run INFO: open-gpu-1.cs.mcgill.ca:40220: Detected CLOSE marker in the outgoing message. I am shutting down after this.
+Nov 03, 2024 1:04:34.341605367 PM comp512.gcl.GCL$GCLOutBoxDespatcher run INFO: open-gpu-1.cs.mcgill.ca:40120: Message despatch thread to the process is now shutdown. No more messages will be sent to that process.
+Nov 03, 2024 1:04:34.341608598 PM comp512.gcl.GCL$GCLInbox run INFO: open-gpu-1.cs.mcgill.ca:40120: Closed incoming connection from this process. The inBox thread is shutdown.
+Nov 03, 2024 1:04:34.341607511 PM comp512.gcl.GCL$GCLInbox run INFO: open-gpu-1.cs.mcgill.ca:40220: Closed incoming connection from this process. The inBox thread is shutdown.
+Nov 03, 2024 1:04:34.341613404 PM comp512.gcl.GCL$GCLOutBoxDespatcher run INFO: open-gpu-1.cs.mcgill.ca:40220: Message despatch thread to the process is now shutdown. No more messages will be sent to that process.
+Nov 03, 2024 1:04:34.541300857 PM comp512.gcl.GCL$GCLOutBoxDespatcher shutdown INFO: open-gpu-1.cs.mcgill.ca:40120: Request initiated to shutdown the message despatcher thread for this process. The thread is currently not alive.
+Nov 03, 2024 1:04:34.541600630 PM comp512.gcl.GCL shutdownGCL INFO: open-gpu-1.cs.mcgill.ca:40220: GCL outbox despatcher thread for this process is now shutdown.
+Nov 03, 2024 1:04:34.541805795 PM comp512.gcl.GCL shutdownGCL INFO: open-gpu-1.cs.mcgill.ca:40120: GCL outbox despatcher thread for this process is now shutdown.
+Nov 03, 2024 1:04:34.542166269 PM comp512.gcl.GCL$GCLInbox shutdown INFO: open-gpu-1.cs.mcgill.ca:40220: Requesting shutdown for GCL message inbox thread from this process. This thread is currently not alive.
+Nov 03, 2024 1:04:34.542443576 PM comp512.gcl.GCL$GCLInbox shutdown INFO: open-gpu-1.cs.mcgill.ca:40220: This thread has already terminated.
+Nov 03, 2024 1:04:34.542530969 PM comp512.gcl.GCL$GCLInbox shutdown INFO: open-gpu-1.cs.mcgill.ca:40120: Requesting shutdown for GCL message inbox thread from this process. This thread is currently not alive.
+Nov 03, 2024 1:04:34.542598642 PM comp512.gcl.GCL$GCLInbox shutdown INFO: open-gpu-1.cs.mcgill.ca:40120: This thread has already terminated.
+Nov 03, 2024 1:04:34.542707848 PM comp512.gcl.GCL shutdownGCL INFO: open-gpu-1.cs.mcgill.ca:40220: GCL inbox thread for this proess is now shutdown.
+Nov 03, 2024 1:04:34.542780067 PM comp512.gcl.GCL shutdownGCL INFO: open-gpu-1.cs.mcgill.ca:40120: GCL inbox thread for this proess is now shutdown.
+Nov 03, 2024 1:04:34.542912661 PM comp512.gcl.GCL readGCMessage INFO: GCL is being shutdown. No more messages will be delivered. Reader will be interrupted.
+Nov 03, 2024 1:04:34.544029703 PM comp512st.tests.TreasureIslandAppAuto main INFO: Process terminated.

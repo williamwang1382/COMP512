@@ -1,0 +1,122 @@
+Nov 03, 2024 8:30:33.265520006 PM comp512st.tiapp.TreasureIslandApp main INFO: Started with arguments : [open-gpu-20.cs.mcgill.ca:40220, open-gpu-1.cs.mcgill.ca:40120,open-gpu-20.cs.mcgill.ca:40220, game-20-99, 2, 2]
+Nov 03, 2024 8:30:33.272693126 PM comp512.utils.FailCheck <init> INFO: Initializing failure check emulation setup....
+Nov 03, 2024 8:30:33.382209001 PM comp512.gcl.GCL <init> INFO: Host open-gpu-20.cs.mcgill.ca/10.69.38.120:40220
+Nov 03, 2024 8:30:33.382566123 PM comp512.gcl.GCL <init> INFO: Initializing outbox despatcher threads.
+Nov 03, 2024 8:30:33.383605660 PM comp512.gcl.GCL$GCLOutBoxDespatcher run INFO: open-gpu-1.cs.mcgill.ca:40120: Starting outbox despatch thread for process.
+Nov 03, 2024 8:30:33.383615485 PM comp512.gcl.GCL$GCLOutBoxDespatcher run INFO: open-gpu-20.cs.mcgill.ca:40220: Starting outbox despatch thread for process.
+Nov 03, 2024 8:30:33.533556984 PM comp512.ti.TreasureIsland <init> INFO: Treasure Island initialized.
+Nov 03, 2024 8:30:35.596018092 PM comp512st.tiapp.TreasureIslandApp main FINE: cmd is : D
+Nov 03, 2024 8:30:35.706534570 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : PaxosMessage{type=PROPOSE, senderId=1, BallotID=1}
+Nov 03, 2024 8:30:35.706962873 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. PaxosMessage{type=PROPOSE, senderId=1, BallotID=1}
+Nov 03, 2024 8:30:35.707484043 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-20.cs.mcgill.ca:40220. PaxosMessage{type=PROPOSE, senderId=1, BallotID=1}
+Nov 03, 2024 8:30:35.708950272 PM comp512.gcl.GCL$InboxListener run INFO: Network connection request from  /10.69.38.120
+Nov 03, 2024 8:30:35.715158153 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-20.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=PROPOSE, senderId=1, BallotID=1}]
+Nov 03, 2024 8:30:35.715159301 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=PROPOSE, senderId=1, BallotID=1}]
+Nov 03, 2024 8:30:35.715358316 PM comp512.gcl.GCL$InboxListener run INFO: open-gpu-20.cs.mcgill.ca:40220: Input stream set up for this process to receive incoming messages. Inet: /10.69.38.120
+Nov 03, 2024 8:30:35.716184120 PM comp512.gcl.GCL$GCLInbox run INFO: open-gpu-20.cs.mcgill.ca:40220: Starting an inBox thread to receive messages from this process.
+Nov 03, 2024 8:30:35.731521786 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-20.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=PROPOSE, senderId=1, BallotID=1}]
+Nov 03, 2024 8:30:35.732100656 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=PROPOSE, senderId=1, BallotID=1}]
+Nov 03, 2024 8:30:35.732520853 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-20.cs.mcgill.ca:40220. PaxosMessage{type=PROMISE, senderId=1, BallotID=1}
+Nov 03, 2024 8:30:35.732747524 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-20.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=PROMISE, senderId=1, BallotID=1}]
+Nov 03, 2024 8:30:35.733355180 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-20.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=PROMISE, senderId=1, BallotID=1}]
+Nov 03, 2024 8:30:35.733689915 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=PROMISE, senderId=1, BallotID=1}]
+Nov 03, 2024 8:30:35.772600547 PM comp512.gcl.GCL$InboxListener run INFO: Network connection request from  /10.69.38.101
+Nov 03, 2024 8:30:35.774943221 PM comp512.gcl.GCL$InboxListener run INFO: open-gpu-1.cs.mcgill.ca:40120: Input stream set up for this process to receive incoming messages. Inet: /10.69.38.101
+Nov 03, 2024 8:30:35.775553771 PM comp512.gcl.GCL$GCLInbox run INFO: open-gpu-1.cs.mcgill.ca:40120: Starting an inBox thread to receive messages from this process.
+Nov 03, 2024 8:30:35.776500039 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40120: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:PaxosMessage{type=PROMISE, senderId=0, BallotID=1}]
+Nov 03, 2024 8:30:35.776772981 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:PaxosMessage{type=PROMISE, senderId=0, BallotID=1}]
+Nov 03, 2024 8:30:35.777015533 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : PaxosMessage{type=ACCEPT, senderId=1, BallotID=1}
+Nov 03, 2024 8:30:35.777309161 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. PaxosMessage{type=ACCEPT, senderId=1, BallotID=1}
+Nov 03, 2024 8:30:35.777510065 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-20.cs.mcgill.ca:40220. PaxosMessage{type=ACCEPT, senderId=1, BallotID=1}
+Nov 03, 2024 8:30:35.777539797 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=ACCEPT, senderId=1, BallotID=1}]
+Nov 03, 2024 8:30:35.777753277 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-20.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=ACCEPT, senderId=1, BallotID=1}]
+Nov 03, 2024 8:30:35.780484236 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-20.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=ACCEPT, senderId=1, BallotID=1}]
+Nov 03, 2024 8:30:35.780774006 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=ACCEPT, senderId=1, BallotID=1}]
+Nov 03, 2024 8:30:35.780996236 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-20.cs.mcgill.ca:40220. PaxosMessage{type=ACCEPTACK, senderId=1, BallotID=0}
+Nov 03, 2024 8:30:35.781251728 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-20.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=ACCEPTACK, senderId=1, BallotID=0}]
+Nov 03, 2024 8:30:35.781734151 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-20.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=ACCEPTACK, senderId=1, BallotID=0}]
+Nov 03, 2024 8:30:35.781988024 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=ACCEPTACK, senderId=1, BallotID=0}]
+Nov 03, 2024 8:30:35.783729675 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40120: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:PaxosMessage{type=ACCEPTACK, senderId=0, BallotID=0}]
+Nov 03, 2024 8:30:35.783959141 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:PaxosMessage{type=ACCEPTACK, senderId=0, BallotID=0}]
+Nov 03, 2024 8:30:35.784198451 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : PaxosMessage{type=CONFIRM, senderId=1, BallotID=0}
+Nov 03, 2024 8:30:35.784391838 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. PaxosMessage{type=CONFIRM, senderId=1, BallotID=0}
+Nov 03, 2024 8:30:35.784565317 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-20.cs.mcgill.ca:40220. PaxosMessage{type=CONFIRM, senderId=1, BallotID=0}
+Nov 03, 2024 8:30:35.784588272 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=CONFIRM, senderId=1, BallotID=0}]
+Nov 03, 2024 8:30:35.784787768 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-20.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=CONFIRM, senderId=1, BallotID=0}]
+Nov 03, 2024 8:30:35.785422822 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-20.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=CONFIRM, senderId=1, BallotID=0}]
+Nov 03, 2024 8:30:35.785664681 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=CONFIRM, senderId=1, BallotID=0}]
+Nov 03, 2024 8:30:35.786009764 PM comp512st.tiapp.TreasureIslandApp run FINE: Received :[2, D]
+Nov 03, 2024 8:30:35.786330898 PM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction D
+Nov 03, 2024 8:30:36.870091500 PM comp512st.tiapp.TreasureIslandApp main FINE: cmd is : R
+Nov 03, 2024 8:30:36.870596006 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : PaxosMessage{type=PROPOSE, senderId=1, BallotID=3}
+Nov 03, 2024 8:30:36.870852521 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. PaxosMessage{type=PROPOSE, senderId=1, BallotID=3}
+Nov 03, 2024 8:30:36.871050013 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-20.cs.mcgill.ca:40220. PaxosMessage{type=PROPOSE, senderId=1, BallotID=3}
+Nov 03, 2024 8:30:36.871081708 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=PROPOSE, senderId=1, BallotID=3}]
+Nov 03, 2024 8:30:36.871299527 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-20.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=PROPOSE, senderId=1, BallotID=3}]
+Nov 03, 2024 8:30:36.871830204 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-20.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=PROPOSE, senderId=1, BallotID=3}]
+Nov 03, 2024 8:30:36.872141437 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=PROPOSE, senderId=1, BallotID=3}]
+Nov 03, 2024 8:30:36.872353380 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-20.cs.mcgill.ca:40220. PaxosMessage{type=PROMISE, senderId=1, BallotID=3}
+Nov 03, 2024 8:30:36.872585435 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-20.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=PROMISE, senderId=1, BallotID=3}]
+Nov 03, 2024 8:30:36.872964841 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-20.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=PROMISE, senderId=1, BallotID=3}]
+Nov 03, 2024 8:30:36.873211215 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=PROMISE, senderId=1, BallotID=3}]
+Nov 03, 2024 8:30:36.873869817 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40120: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:PaxosMessage{type=PROMISE, senderId=0, BallotID=3}]
+Nov 03, 2024 8:30:36.874136064 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:PaxosMessage{type=PROMISE, senderId=0, BallotID=3}]
+Nov 03, 2024 8:30:36.874296158 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : PaxosMessage{type=ACCEPT, senderId=1, BallotID=3}
+Nov 03, 2024 8:30:36.874464301 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. PaxosMessage{type=ACCEPT, senderId=1, BallotID=3}
+Nov 03, 2024 8:30:36.874597602 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-20.cs.mcgill.ca:40220. PaxosMessage{type=ACCEPT, senderId=1, BallotID=3}
+Nov 03, 2024 8:30:36.874656730 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=ACCEPT, senderId=1, BallotID=3}]
+Nov 03, 2024 8:30:36.874805914 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-20.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=ACCEPT, senderId=1, BallotID=3}]
+Nov 03, 2024 8:30:36.875350632 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-20.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=ACCEPT, senderId=1, BallotID=3}]
+Nov 03, 2024 8:30:36.875568326 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=ACCEPT, senderId=1, BallotID=3}]
+Nov 03, 2024 8:30:36.875733155 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-20.cs.mcgill.ca:40220. PaxosMessage{type=ACCEPTACK, senderId=1, BallotID=0}
+Nov 03, 2024 8:30:36.875952895 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-20.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=ACCEPTACK, senderId=1, BallotID=0}]
+Nov 03, 2024 8:30:36.876323632 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-20.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=ACCEPTACK, senderId=1, BallotID=0}]
+Nov 03, 2024 8:30:36.876513776 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=ACCEPTACK, senderId=1, BallotID=0}]
+Nov 03, 2024 8:30:36.877471070 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40120: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:PaxosMessage{type=ACCEPTACK, senderId=0, BallotID=0}]
+Nov 03, 2024 8:30:36.877686752 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:PaxosMessage{type=ACCEPTACK, senderId=0, BallotID=0}]
+Nov 03, 2024 8:30:36.878022499 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : PaxosMessage{type=CONFIRM, senderId=1, BallotID=0}
+Nov 03, 2024 8:30:36.878196272 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. PaxosMessage{type=CONFIRM, senderId=1, BallotID=0}
+Nov 03, 2024 8:30:36.878342235 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-20.cs.mcgill.ca:40220. PaxosMessage{type=CONFIRM, senderId=1, BallotID=0}
+Nov 03, 2024 8:30:36.878378804 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=CONFIRM, senderId=1, BallotID=0}]
+Nov 03, 2024 8:30:36.878536124 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-20.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=CONFIRM, senderId=1, BallotID=0}]
+Nov 03, 2024 8:30:36.879116745 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-20.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=CONFIRM, senderId=1, BallotID=0}]
+Nov 03, 2024 8:30:36.879318369 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=CONFIRM, senderId=1, BallotID=0}]
+Nov 03, 2024 8:30:36.879542320 PM comp512st.tiapp.TreasureIslandApp run FINE: Received :[2, R]
+Nov 03, 2024 8:30:36.879698884 PM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction R
+Nov 03, 2024 8:30:36.880006589 PM comp512.ti.TreasureIsland move INFO: Player B got treasure points 4
+Nov 03, 2024 8:30:37.580980479 PM comp512st.tiapp.TreasureIslandApp main FINE: cmd is : D
+Nov 03, 2024 8:30:37.581411185 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : PaxosMessage{type=PROPOSE, senderId=1, BallotID=5}
+Nov 03, 2024 8:30:37.581632420 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. PaxosMessage{type=PROPOSE, senderId=1, BallotID=5}
+Nov 03, 2024 8:30:37.581847318 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-20.cs.mcgill.ca:40220. PaxosMessage{type=PROPOSE, senderId=1, BallotID=5}
+Nov 03, 2024 8:30:37.581896768 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=PROPOSE, senderId=1, BallotID=5}]
+Nov 03, 2024 8:30:37.582090376 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-20.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=PROPOSE, senderId=1, BallotID=5}]
+Nov 03, 2024 8:30:37.582647048 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-20.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=PROPOSE, senderId=1, BallotID=5}]
+Nov 03, 2024 8:30:37.582889483 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=PROPOSE, senderId=1, BallotID=5}]
+Nov 03, 2024 8:30:37.583078456 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-20.cs.mcgill.ca:40220. PaxosMessage{type=PROMISE, senderId=1, BallotID=5}
+Nov 03, 2024 8:30:37.583290677 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-20.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=PROMISE, senderId=1, BallotID=5}]
+Nov 03, 2024 8:30:37.583717950 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-20.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=PROMISE, senderId=1, BallotID=5}]
+Nov 03, 2024 8:30:37.583894636 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=PROMISE, senderId=1, BallotID=5}]
+Nov 03, 2024 8:30:37.584649365 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40120: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:PaxosMessage{type=PROMISE, senderId=0, BallotID=5}]
+Nov 03, 2024 8:30:37.584836715 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:PaxosMessage{type=PROMISE, senderId=0, BallotID=5}]
+Nov 03, 2024 8:30:37.584979174 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : PaxosMessage{type=ACCEPT, senderId=1, BallotID=5}
+Nov 03, 2024 8:30:37.585124142 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. PaxosMessage{type=ACCEPT, senderId=1, BallotID=5}
+Nov 03, 2024 8:30:37.585240767 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-20.cs.mcgill.ca:40220. PaxosMessage{type=ACCEPT, senderId=1, BallotID=5}
+Nov 03, 2024 8:30:37.585284523 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=ACCEPT, senderId=1, BallotID=5}]
+Nov 03, 2024 8:30:37.585456985 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-20.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=ACCEPT, senderId=1, BallotID=5}]
+Nov 03, 2024 8:30:37.586014537 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-20.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=ACCEPT, senderId=1, BallotID=5}]
+Nov 03, 2024 8:30:37.586194563 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=ACCEPT, senderId=1, BallotID=5}]
+Nov 03, 2024 8:30:37.586331695 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-20.cs.mcgill.ca:40220. PaxosMessage{type=ACCEPTACK, senderId=1, BallotID=0}
+Nov 03, 2024 8:30:37.586529346 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-20.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=ACCEPTACK, senderId=1, BallotID=0}]
+Nov 03, 2024 8:30:37.586837358 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-20.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=ACCEPTACK, senderId=1, BallotID=0}]
+Nov 03, 2024 8:30:37.587009548 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=ACCEPTACK, senderId=1, BallotID=0}]
+Nov 03, 2024 8:30:37.587400035 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-1.cs.mcgill.ca:40120: Received a message from. message: [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:PaxosMessage{type=ACCEPTACK, senderId=0, BallotID=0}]
+Nov 03, 2024 8:30:37.587607036 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:PaxosMessage{type=ACCEPTACK, senderId=0, BallotID=0}]
+Nov 03, 2024 8:30:37.587760485 PM comp512.gcl.GCL broadcastMsg FINE: Broadcast message request received. Translating to point-to-point messages : PaxosMessage{type=CONFIRM, senderId=1, BallotID=0}
+Nov 03, 2024 8:30:37.587910267 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-1.cs.mcgill.ca:40120. PaxosMessage{type=CONFIRM, senderId=1, BallotID=0}
+Nov 03, 2024 8:30:37.588049397 PM comp512.gcl.GCL sendMsg FINE: Request received to send message to open-gpu-20.cs.mcgill.ca:40220. PaxosMessage{type=CONFIRM, senderId=1, BallotID=0}
+Nov 03, 2024 8:30:37.588092582 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-1.cs.mcgill.ca:40120: Sending message to. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=CONFIRM, senderId=1, BallotID=0}]
+Nov 03, 2024 8:30:37.588250327 PM comp512.gcl.GCL$GCLOutBoxDespatcher run FINE: open-gpu-20.cs.mcgill.ca:40220: Sending message to. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=CONFIRM, senderId=1, BallotID=0}]
+Nov 03, 2024 8:30:37.588691430 PM comp512.gcl.GCL$GCLInbox run FINE: open-gpu-20.cs.mcgill.ca:40220: Received a message from. message: [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=CONFIRM, senderId=1, BallotID=0}]
+Nov 03, 2024 8:30:37.588845155 PM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-20.cs.mcgill.ca:40220:val:PaxosMessage{type=CONFIRM, senderId=1, BallotID=0}]
+Nov 03, 2024 8:30:37.589048421 PM comp512st.tiapp.TreasureIslandApp run FINE: Received :[2, D]
+Nov 03, 2024 8:30:37.589194147 PM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction D
