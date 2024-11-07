@@ -296,14 +296,9 @@ public class Paxos
 						break;
 					case CONFIRM:
 
-						// incoming.offer(pxmsg.val);
-						// incoming.offer(this.acceptedVal);
+						incoming.offer(pxmsg.val);
 
-						if (this.acceptedVal != null) incoming.offer(this.acceptedVal);
-						else incoming.offer(pxmsg.val);
 
-						// if (pxmsg.val != null) incoming.put(pxmsg.ballotID, pxmsg.val);
-						// else incoming.put(pxmsg.ballotID, this.acceptedVal);
 
 						break;
 					default:
