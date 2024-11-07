@@ -25,30 +25,51 @@
 |   |   |   |   | # |   |   | # | # | # |   |   |   |   |   | 7 |   |   |   |
 -----------------------------------------------------------------------------
 [ A/0 ] [ B/0 ] [ C/0 ] [ D/0 ] [ E/0 ] 
-sending out CONFIRM with val: [Ljava.lang.Object;@27d5d5a0
-6178
-This process's RateTime: 8
+sending out CONFIRM with val: [Ljava.lang.Object;@643089c8
+sending out CONFIRM with val: [Ljava.lang.Object;@642761dd
+sending out CONFIRM with val: [Ljava.lang.Object;@6b96b136
+sending out CONFIRM with val: [Ljava.lang.Object;@1c08bfd7
+sending out CONFIRM with val: [Ljava.lang.Object;@7189da95
+sending out CONFIRM with val: [Ljava.lang.Object;@795dc883
+sending out CONFIRM with val: [Ljava.lang.Object;@25429f87
+sending out CONFIRM with val: [Ljava.lang.Object;@7543334e
+sending out CONFIRM with val: [Ljava.lang.Object;@1f112b70
+sending out CONFIRM with val: [Ljava.lang.Object;@1db8d1ac
+sending out CONFIRM with val: [Ljava.lang.Object;@63368226
+sending out CONFIRM with val: [Ljava.lang.Object;@79da8153
+sending out CONFIRM with val: [Ljava.lang.Object;@5313da54
+sending out CONFIRM with val: [Ljava.lang.Object;@1f028581
+sending out CONFIRM with val: [Ljava.lang.Object;@139d01ac
+sending out CONFIRM with val: [Ljava.lang.Object;@18eb48d6
+sending out CONFIRM with val: [Ljava.lang.Object;@7c25a198
+sending out CONFIRM with val: [Ljava.lang.Object;@502ddcfe
+5951
+This process's RateTime: 81
 [H[2J
 -----------------------------------------------------------------------------
-|   |   |   |   |   |   | A |   |   | C |   |   |   |   |   | 5 |   |   |   |
+|   |   |   |   |   |   | A |   | C |   |   |   |   |   |   | 5 |   |   |   |
 -----------------------------------------------------------------------------
 |   |   |   | # |   |   |   |   |   |   |   |   |   |   |   |   | 3 |   |   |
 -----------------------------------------------------------------------------
-|   |   | # |   | # |   |   |   |   |   |   |   |   |   |   |   |   |   | # |
+|   |   | # |   | # |   |   |   |   |Exception in thread "Thread-7"    |   |   |   |   |   |   |   |   | # |
 -----------------------------------------------------------------------------
-|   | # |   |   |   |   |   |   |   | # |   |   |   |   |   | 4 |Exception in thread "Thread-7"    |   |   |
+|   | # |   |   |   |   |   |   |   | # |   |   |   |   |   |java.lang.IllegalStateException: broadcastMsg was called after a shutdown was initiated! message : comp512st.paxos.Paxos$PaxosMessage@1b3377b9
+ 4 |   |   |   |
 -----------------------------------------------------------------------------
-|   |   |   |   |   |   |   |   |   |   |   |   | # | # |   |   | 5 |   |   |
------------------------------------------------------------------------------
-|   |   |java.lang.IllegalStateException: broadcastMsg was called after a shutdown was initiated! message : comp512st.paxos.Paxos$PaxosMessage@3e51ac17
-   |   |   |   |   |   |   |   | 3 |   |   |   |   | D | # |   |   |
------------------------------------------------------------------------------
-| 9 | B | 2 |   |   |   |   |   |   |   |   |   | # | # |   |   |   | E |   |
------------------------------------------------------------------------------
-|	at comp512.gcl.GCL.broadcastMsg(GCL.java:224)
-   | # |   |	at comp512st.paxos.Paxos$Proposer.propose(Paxos.java:235)
+|   |   |   |   |   |   |   |	at comp512.gcl.GCL.broadcastMsg(GCL.java:224)
+   |   |	at comp512st.paxos.Paxos$Proposer.propose(Paxos.java:235)
    |   |	at comp512st.paxos.Paxos$Proposer.run(Paxos.java:131)
-   |   |   | 8 |   |   | # |   |   |   |   | # |   |   |
+   | # | # |   |   | 5 |   |   |
+-----------------------------------------------------------------------------
+|   |   |   |   |   |   |   |   |   |   | 3 |   |   |   |   | D | # |   |   |
+-----------------------------------------------------------------------------
+| 9 | B | 2 |   |   |   |   |   |   |   |   |   | # | # |   |Exception in thread "Thread-6"    |   | E |   |
+-----------------------------------------------------------------------------
+java.lang.IllegalStateException: sendMsg was called after a shutdown was initiated! destination process :open-gpu-1.cs.mcgill.ca:40220 : message : comp512st.paxos.Paxos$PaxosMessage@3343c55f
+|   | # |   |	at comp512.gcl.GCL.sendMsg(GCL.java:196)
+   |   |   |	at comp512st.paxos.Paxos$Acceptor.accept(Paxos.java:336)
+   |   |	at comp512st.paxos.Paxos$Acceptor.run(Paxos.java:290)
+ 8 |   |   | # |   |   |   |   | # |   |   |
 -----------------------------------------------------------------------------
 |   |   |   |   | # |   |   | 8 | # |   |   |   |   |   | # |   |   | 9 |   |
 -----------------------------------------------------------------------------

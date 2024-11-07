@@ -1,4 +1,4 @@
-Game : game-20-99 : Player : 1 record.
+Game : game-20-99 : Player : 3 record.
 Move request: player number 5 direction D
 Move request: player number 3 direction U
 Move request: player number 4 direction D
@@ -52,4 +52,3 @@ Move request: player number 5 direction D
 Move request: player number 3 direction U
 Move request: player number 4 direction R
 Move request: player number 5 direction R
-Move request: player number 3 direction R

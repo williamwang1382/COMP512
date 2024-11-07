@@ -25,30 +25,47 @@
 |   |   |   |   | # |   |   | # | # | # |   |   |   |   |   | 7 |   |   |   |
 -----------------------------------------------------------------------------
 [ A/0 ] [ B/0 ] [ C/0 ] [ D/0 ] [ E/0 ] 
-sending out CONFIRM with val: [Ljava.lang.Object;@27d5d5a0
-6178
-This process's RateTime: 8
+sending out CONFIRM with val: [Ljava.lang.Object;@4d1ec31a
+sending out CONFIRM with val: [Ljava.lang.Object;@6d83cd52
+sending out CONFIRM with val: [Ljava.lang.Object;@33b2e52a
+sending out CONFIRM with val: [Ljava.lang.Object;@1fbd62e1
+sending out CONFIRM with val: [Ljava.lang.Object;@30e8e2a0
+sending out CONFIRM with val: [Ljava.lang.Object;@311a2a07
+sending out CONFIRM with val: [Ljava.lang.Object;@45ba37c7
+sending out CONFIRM with val: [Ljava.lang.Object;@3777de22
+sending out CONFIRM with val: [Ljava.lang.Object;@20131243
+sending out CONFIRM with val: [Ljava.lang.Object;@76174187
+sending out CONFIRM with val: [Ljava.lang.Object;@45bc53f0
+sending out CONFIRM with val: [Ljava.lang.Object;@804c918
+sending out CONFIRM with val: [Ljava.lang.Object;@796e6acf
+sending out CONFIRM with val: [Ljava.lang.Object;@1778b169
+sending out CONFIRM with val: [Ljava.lang.Object;@653da15e
+sending out CONFIRM with val: [Ljava.lang.Object;@18f32bc6
+sending out CONFIRM with val: [Ljava.lang.Object;@2770683d
+sending out CONFIRM with val: [Ljava.lang.Object;@7f573e25
+5967
+This process's RateTime: 108
 [H[2J
 -----------------------------------------------------------------------------
-|   |   |   |   |   |   | A |   |   | C |   |   |   |   |   | 5 |   |   |   |
+|   |   |   |   |   |   | A |   | C |   |   |   |   |   |   | 5 |   |   |   |
 -----------------------------------------------------------------------------
 |   |   |   | # |   |   |   |   |   |   |   |   |   |   |   |   | 3 |   |   |
 -----------------------------------------------------------------------------
 |   |   | # |   | # |   |   |   |   |   |   |   |   |   |   |   |   |   | # |
 -----------------------------------------------------------------------------
-|   | # |   |   |   |   |   |   |   | # |   |   |   |   |   | 4 |Exception in thread "Thread-7"    |   |   |
+|   | # |   |   |   |   |   |   |   | # |   |   |   |   |   | 4 |   |   |   |
 -----------------------------------------------------------------------------
-|   |   |   |   |   |   |   |   |   |   |   |   | # | # |   |   | 5 |   |   |
+|   |   |   |   |   |   |   |   |   |   |   |   | # | # |   |   | 5 |   |   |Exception in thread "Thread-6" 
 -----------------------------------------------------------------------------
-|   |   |java.lang.IllegalStateException: broadcastMsg was called after a shutdown was initiated! message : comp512st.paxos.Paxos$PaxosMessage@3e51ac17
-   |   |   |   |   |   |   |   | 3 |   |   |   |   | D | # |   |   |
+|   |   |   |   |   |   |   |   |   |   | 3 |   |   |   |   | D | # |   |   |
 -----------------------------------------------------------------------------
-| 9 | B | 2 |   |   |   |   |   |   |   |   |   | # | # |   |   |   | E |   |
+| 9 | B | 2 |   |   |   |   |   |   |   |   |   | # | # |   |java.lang.IllegalStateException: sendMsg was called after a shutdown was initiated! destination process :open-gpu-1.cs.mcgill.ca:40320 : message : comp512st.paxos.Paxos$PaxosMessage@7fe42554
+   |   | E |   |
 -----------------------------------------------------------------------------
-|	at comp512.gcl.GCL.broadcastMsg(GCL.java:224)
-   | # |   |	at comp512st.paxos.Paxos$Proposer.propose(Paxos.java:235)
-   |   |	at comp512st.paxos.Paxos$Proposer.run(Paxos.java:131)
-   |   |   | 8 |   |   | # |   |   |   |   | # |   |   |
+|   | # |   |   |   |   |   |   | 8 |   |   |	at comp512.gcl.GCL.sendMsg(GCL.java:196)
+ # |   |   |	at comp512st.paxos.Paxos$Acceptor.promise(Paxos.java:326)
+   |   |	at comp512st.paxos.Paxos$Acceptor.run(Paxos.java:279)
+ # |   |   |
 -----------------------------------------------------------------------------
 |   |   |   |   | # |   |   | 8 | # |   |   |   |   |   | # |   |   | 9 |   |
 -----------------------------------------------------------------------------
