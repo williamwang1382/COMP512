@@ -1,0 +1,959 @@
+Nov 07, 2024 12:51:59.089889244 AM comp512.gcl.GCL <init> INFO: Host open-gpu-1.cs.mcgill.ca/10.69.38.101:40220
+Nov 07, 2024 12:51:59.090753417 AM comp512.gcl.GCL <init> INFO: Initializing outbox despatcher threads.
+Nov 07, 2024 12:51:59.093738772 AM comp512.gcl.GCL$GCLOutBoxDespatcher run INFO: open-gpu-1.cs.mcgill.ca:40120: Starting outbox despatch thread for process.
+Nov 07, 2024 12:51:59.093747579 AM comp512.gcl.GCL$GCLOutBoxDespatcher run INFO: open-gpu-1.cs.mcgill.ca:40220: Starting outbox despatch thread for process.
+Nov 07, 2024 12:51:59.094005683 AM comp512.gcl.GCL$GCLOutBoxDespatcher run INFO: open-gpu-1.cs.mcgill.ca:40420: Starting outbox despatch thread for process.
+Nov 07, 2024 12:51:59.094106493 AM comp512.gcl.GCL$GCLOutBoxDespatcher run INFO: open-gpu-1.cs.mcgill.ca:40520: Starting outbox despatch thread for process.
+Nov 07, 2024 12:51:59.094469399 AM comp512.gcl.GCL$GCLOutBoxDespatcher run INFO: open-gpu-1.cs.mcgill.ca:40320: Starting outbox despatch thread for process.
+Nov 07, 2024 12:51:59.104044315 AM comp512.ti.TreasureIsland <init> INFO: TIMONOCHROME is set to true, colors would be disabled.
+Nov 07, 2024 12:51:59.104639667 AM comp512.ti.TreasureIsland <init> INFO: Treasure Island initialized.
+Nov 07, 2024 12:51:59.120582496 AM comp512st.tests.TreasureIslandAppAuto$AutoMoveGenerator <init> INFO: AutoMoveGenerator setup maxmoves = 50, interval = 100, randseed = 1234562, failmode = null
+Nov 07, 2024 12:51:59.139222610 AM comp512.gcl.GCL$InboxListener run INFO: Network connection request from  /10.69.38.101
+Nov 07, 2024 12:51:59.141400595 AM comp512.gcl.GCL$GCLOutBoxDespatcher openConnection SEVERE: open-gpu-1.cs.mcgill.ca:40420: Encountered IOException while trying to establish.  Inet: open-gpu-1.cs.mcgill.ca/10.69.38.101 port: 40420 : java.net.ConnectException: Connection refused
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:589)
+	at java.base/sun.nio.ch.Net.connect(Net.java:578)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/java.net.Socket.connect(Socket.java:686)
+	at java.base/java.net.Socket.<init>(Socket.java:555)
+	at java.base/java.net.Socket.<init>(Socket.java:356)
+	at comp512.gcl.GCL$GCLOutBoxDespatcher.openConnection(GCL.java:71)
+	at comp512.gcl.GCL$GCLOutBoxDespatcher.run(GCL.java:112)
+
+Nov 07, 2024 12:51:59.145777755 AM comp512.gcl.GCL$GCLOutBoxDespatcher run INFO: open-gpu-1.cs.mcgill.ca:40420: Will try connecting to  after 100 milliseconds.
+Nov 07, 2024 12:51:59.151924470 AM comp512.gcl.GCL$InboxListener run INFO: open-gpu-1.cs.mcgill.ca:40220: Input stream set up for this process to receive incoming messages. Inet: /10.69.38.101
+Nov 07, 2024 12:51:59.160556904 AM comp512.gcl.GCL$InboxListener run INFO: Network connection request from  /10.69.38.101
+Nov 07, 2024 12:51:59.161101616 AM comp512.gcl.GCL$InboxListener run INFO: open-gpu-1.cs.mcgill.ca:40120: Input stream set up for this process to receive incoming messages. Inet: /10.69.38.101
+Nov 07, 2024 12:51:59.162008386 AM comp512.gcl.GCL$GCLInbox run INFO: open-gpu-1.cs.mcgill.ca:40220: Starting an inBox thread to receive messages from this process.
+Nov 07, 2024 12:51:59.163032203 AM comp512.gcl.GCL$GCLInbox run INFO: open-gpu-1.cs.mcgill.ca:40120: Starting an inBox thread to receive messages from this process.
+Nov 07, 2024 12:51:59.182710117 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@16b0f014]
+Nov 07, 2024 12:51:59.184498529 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@6be10a05]
+Nov 07, 2024 12:51:59.187215365 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@13fb1a99]
+Nov 07, 2024 12:51:59.187953015 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@1d3ce696]
+Nov 07, 2024 12:51:59.209478660 AM comp512.gcl.GCL$InboxListener run INFO: Network connection request from  /10.69.38.101
+Nov 07, 2024 12:51:59.210531789 AM comp512.gcl.GCL$InboxListener run INFO: open-gpu-1.cs.mcgill.ca:40320: Input stream set up for this process to receive incoming messages. Inet: /10.69.38.101
+Nov 07, 2024 12:51:59.217578669 AM comp512.gcl.GCL$GCLInbox run INFO: open-gpu-1.cs.mcgill.ca:40320: Starting an inBox thread to receive messages from this process.
+Nov 07, 2024 12:51:59.219240263 AM comp512.gcl.GCL$InboxListener run INFO: Network connection request from  /10.69.38.101
+Nov 07, 2024 12:51:59.223929909 AM comp512.gcl.GCL$InboxListener run INFO: open-gpu-1.cs.mcgill.ca:40520: Input stream set up for this process to receive incoming messages. Inet: /10.69.38.101
+Nov 07, 2024 12:51:59.228725397 AM comp512.gcl.GCL$GCLInbox run INFO: open-gpu-1.cs.mcgill.ca:40520: Starting an inBox thread to receive messages from this process.
+Nov 07, 2024 12:51:59.233175805 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@308c8831]
+Nov 07, 2024 12:51:59.237381585 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@3e4b7050]
+Nov 07, 2024 12:51:59.255549837 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@3bcd3a12]
+Nov 07, 2024 12:51:59.255917797 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@350ac31b]
+Nov 07, 2024 12:51:59.247811768 AM comp512.gcl.GCL$InboxListener run INFO: Network connection request from  /10.69.38.101
+Nov 07, 2024 12:51:59.258492948 AM comp512.gcl.GCL$InboxListener run INFO: open-gpu-1.cs.mcgill.ca:40420: Input stream set up for this process to receive incoming messages. Inet: /10.69.38.101
+Nov 07, 2024 12:51:59.261285378 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@49252473]
+Nov 07, 2024 12:51:59.265402993 AM comp512.gcl.GCL$GCLInbox run INFO: open-gpu-1.cs.mcgill.ca:40420: Starting an inBox thread to receive messages from this process.
+Nov 07, 2024 12:51:59.268628614 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@5ea31ddf]
+Nov 07, 2024 12:51:59.270005247 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@5064e87b]
+Nov 07, 2024 12:51:59.274373341 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@31355162]
+Nov 07, 2024 12:51:59.278105140 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@7437c920]
+Nov 07, 2024 12:51:59.279112883 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction D
+Nov 07, 2024 12:51:59.529769740 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@6e4a7290]
+Nov 07, 2024 12:51:59.530451707 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@3ade2977]
+Nov 07, 2024 12:51:59.533460059 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@545b76af]
+Nov 07, 2024 12:51:59.534685062 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@190371e9]
+Nov 07, 2024 12:51:59.535328295 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@1b9711f2]
+Nov 07, 2024 12:51:59.536141798 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@2bff5e68]
+Nov 07, 2024 12:51:59.539196708 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@2678601e]
+Nov 07, 2024 12:51:59.539528501 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@5c01ecad]
+Nov 07, 2024 12:51:59.539721401 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@1159e240]
+Nov 07, 2024 12:51:59.539899906 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@45897dd1]
+Nov 07, 2024 12:51:59.540330059 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@48add830]
+Nov 07, 2024 12:51:59.540951934 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@48b4224b]
+Nov 07, 2024 12:51:59.541421542 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@754efd47]
+Nov 07, 2024 12:51:59.544640733 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction D
+Nov 07, 2024 12:51:59.566778573 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@1b17fedc]
+Nov 07, 2024 12:51:59.571373469 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@7bf15771]
+Nov 07, 2024 12:51:59.573772137 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@17e50a66]
+Nov 07, 2024 12:51:59.576831641 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@58cac17c]
+Nov 07, 2024 12:51:59.577328487 AM comp512.ti.TreasureIsland move INFO: Move request: player number 3 direction U
+Nov 07, 2024 12:51:59.578184723 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@5e2c8a43]
+Nov 07, 2024 12:51:59.582985660 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@1418366f]
+Nov 07, 2024 12:51:59.584181337 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@57525851]
+Nov 07, 2024 12:51:59.584475805 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@208255f0]
+Nov 07, 2024 12:51:59.587717489 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@7105dc62]
+Nov 07, 2024 12:51:59.588116582 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction R
+Nov 07, 2024 12:51:59.845289993 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@3e90f708]
+Nov 07, 2024 12:51:59.845873790 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@6fcde2ac]
+Nov 07, 2024 12:51:59.847921086 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@6d97565a]
+Nov 07, 2024 12:51:59.848222684 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@31851654]
+Nov 07, 2024 12:51:59.848412971 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@7f6c4066]
+Nov 07, 2024 12:51:59.850327565 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@2f63b141]
+Nov 07, 2024 12:51:59.854553063 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@4987db3d]
+Nov 07, 2024 12:51:59.854924188 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@71761d0f]
+Nov 07, 2024 12:51:59.855135944 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@4528a35a]
+Nov 07, 2024 12:51:59.855318648 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@6f99ee38]
+Nov 07, 2024 12:51:59.855483924 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@4b21b38f]
+Nov 07, 2024 12:51:59.857558954 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@1540ffa6]
+Nov 07, 2024 12:51:59.858423492 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@72b02554]
+Nov 07, 2024 12:51:59.858759591 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction U
+Nov 07, 2024 12:51:59.876392608 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@3c2e13e2]
+Nov 07, 2024 12:51:59.885389492 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@34a353a0]
+Nov 07, 2024 12:51:59.889927283 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@6bcad11]
+Nov 07, 2024 12:51:59.890454661 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@10564ede]
+Nov 07, 2024 12:51:59.897758469 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@4fef767a]
+Nov 07, 2024 12:51:59.898956629 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@3467fd3e]
+Nov 07, 2024 12:51:59.899312298 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction D
+Nov 07, 2024 12:51:59.901049107 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@64fb78a0]
+Nov 07, 2024 12:51:59.908331257 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@529d7091]
+Nov 07, 2024 12:51:59.908571403 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction D
+Nov 07, 2024 12:52:00.069429683 AM comp512st.paxos.Paxos lambda$new$0 INFO: Moves processed so far: 7
+Nov 07, 2024 12:52:00.156521991 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@7268612c]
+Nov 07, 2024 12:52:00.157478717 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@6a349462]
+Nov 07, 2024 12:52:00.157740427 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@52af2beb]
+Nov 07, 2024 12:52:00.157916284 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@541126f]
+Nov 07, 2024 12:52:00.158101413 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@753800d8]
+Nov 07, 2024 12:52:00.158264378 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@3a7983b]
+Nov 07, 2024 12:52:00.158428342 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@43ba7483]
+Nov 07, 2024 12:52:00.159010967 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@30537325]
+Nov 07, 2024 12:52:00.159258325 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@5b28738c]
+Nov 07, 2024 12:52:00.159425117 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@739a18c6]
+Nov 07, 2024 12:52:00.159582393 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@70adafde]
+Nov 07, 2024 12:52:00.159758619 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@54553b93]
+Nov 07, 2024 12:52:00.160044392 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@1830502]
+Nov 07, 2024 12:52:00.160265506 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction D
+Nov 07, 2024 12:52:00.192290793 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@749de70f]
+Nov 07, 2024 12:52:00.194710399 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@381f99dd]
+Nov 07, 2024 12:52:00.196186097 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@339a1ded]
+Nov 07, 2024 12:52:00.199374395 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@691e586]
+Nov 07, 2024 12:52:00.199775856 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction D
+Nov 07, 2024 12:52:00.203656065 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@44454b17]
+Nov 07, 2024 12:52:00.205281762 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@7d65a2f6]
+Nov 07, 2024 12:52:00.207139787 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@61b574dc]
+Nov 07, 2024 12:52:00.208918278 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@563e2ec2]
+Nov 07, 2024 12:52:00.209425711 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction D
+Nov 07, 2024 12:52:00.209804132 AM comp512.ti.TreasureIsland move WARNING: Cannot move character E into a barrier. Not a legal move.
+Nov 07, 2024 12:52:00.460601201 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@cdcbd37]
+Nov 07, 2024 12:52:00.461425759 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@1ebd42cb]
+Nov 07, 2024 12:52:00.461613826 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@4b70b884]
+Nov 07, 2024 12:52:00.461761002 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@38604b7d]
+Nov 07, 2024 12:52:00.461899089 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@1cd2de43]
+Nov 07, 2024 12:52:00.462049296 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@5e343e32]
+Nov 07, 2024 12:52:00.462185352 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@37335ca7]
+Nov 07, 2024 12:52:00.462466896 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@2e81f456]
+Nov 07, 2024 12:52:00.462649206 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@106d3612]
+Nov 07, 2024 12:52:00.462823901 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@7397a0a]
+Nov 07, 2024 12:52:00.463149117 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@25035f0e]
+Nov 07, 2024 12:52:00.463547210 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@47ddd1b4]
+Nov 07, 2024 12:52:00.463762389 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction U
+Nov 07, 2024 12:52:00.463962530 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@5aa8f1b0]
+Nov 07, 2024 12:52:00.493776035 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@7acd40dd]
+Nov 07, 2024 12:52:00.499391712 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@393efa7d]
+Nov 07, 2024 12:52:00.501084461 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@300a8509]
+Nov 07, 2024 12:52:00.502222114 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@44d532d9]
+Nov 07, 2024 12:52:00.502587136 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction D
+Nov 07, 2024 12:52:00.509400414 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@75213b4a]
+Nov 07, 2024 12:52:00.510530626 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@331240f1]
+Nov 07, 2024 12:52:00.513570493 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@524e4312]
+Nov 07, 2024 12:52:00.514384508 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@1c346547]
+Nov 07, 2024 12:52:00.514746927 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction U
+Nov 07, 2024 12:52:00.764157673 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@4df72fca]
+Nov 07, 2024 12:52:00.764950078 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@600c84b7]
+Nov 07, 2024 12:52:00.765190838 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@59ed6e82]
+Nov 07, 2024 12:52:00.765321385 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@61736514]
+Nov 07, 2024 12:52:00.765439904 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@23f0a2e0]
+Nov 07, 2024 12:52:00.765566669 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@79cbc1db]
+Nov 07, 2024 12:52:00.765827972 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@418effa4]
+Nov 07, 2024 12:52:00.766100978 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@68f7d650]
+Nov 07, 2024 12:52:00.766246584 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@5bf2e1e4]
+Nov 07, 2024 12:52:00.766369537 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@174e9ad0]
+Nov 07, 2024 12:52:00.766490090 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@5f7726bf]
+Nov 07, 2024 12:52:00.766677544 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@1c0a2dfb]
+Nov 07, 2024 12:52:00.766843225 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction U
+Nov 07, 2024 12:52:00.767016898 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@671b57e]
+Nov 07, 2024 12:52:00.795958503 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@175729ba]
+Nov 07, 2024 12:52:00.802426256 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@730877fd]
+Nov 07, 2024 12:52:00.803819687 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@1ea6c0bf]
+Nov 07, 2024 12:52:00.804917377 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@2c0d3497]
+Nov 07, 2024 12:52:00.805277098 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction R
+Nov 07, 2024 12:52:00.811729408 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@7fd5de04]
+Nov 07, 2024 12:52:00.815015377 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@7f01b890]
+Nov 07, 2024 12:52:00.816690512 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@4020e46a]
+Nov 07, 2024 12:52:00.818272765 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@66e1b92c]
+Nov 07, 2024 12:52:00.818608281 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction L
+Nov 07, 2024 12:52:01.067220941 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@18a73bf1]
+Nov 07, 2024 12:52:01.068071769 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@2ee2849e]
+Nov 07, 2024 12:52:01.068284633 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@5e611cc7]
+Nov 07, 2024 12:52:01.068409478 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@c53991]
+Nov 07, 2024 12:52:01.068525373 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@4ff6a3dc]
+Nov 07, 2024 12:52:01.068643674 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@70c4825]
+Nov 07, 2024 12:52:01.068918896 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@78718244]
+Nov 07, 2024 12:52:01.069298436 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@7d2dc615]
+Nov 07, 2024 12:52:01.069451933 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@72f2d421]
+Nov 07, 2024 12:52:01.069568048 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@7f719240]
+Nov 07, 2024 12:52:01.069767569 AM comp512st.paxos.Paxos lambda$new$0 INFO: Moves processed so far: 9
+Nov 07, 2024 12:52:01.069677985 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@35591d44]
+Nov 07, 2024 12:52:01.070080513 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@1480d0ad]
+Nov 07, 2024 12:52:01.070240859 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction R
+Nov 07, 2024 12:52:01.071038954 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@7903cbc9]
+Nov 07, 2024 12:52:01.097881709 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@311ce595]
+Nov 07, 2024 12:52:01.105420431 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@577a1629]
+Nov 07, 2024 12:52:01.106932651 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@121639dd]
+Nov 07, 2024 12:52:01.107897697 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@68848000]
+Nov 07, 2024 12:52:01.108276628 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction R
+Nov 07, 2024 12:52:01.113689281 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@72d24bd2]
+Nov 07, 2024 12:52:01.118564537 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@35366da1]
+Nov 07, 2024 12:52:01.120137175 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@5ef58af2]
+Nov 07, 2024 12:52:01.120658406 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@7755390c]
+Nov 07, 2024 12:52:01.120904144 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction D
+Nov 07, 2024 12:52:01.121089776 AM comp512.ti.TreasureIsland move WARNING: Cannot move character E into a barrier. Not a legal move.
+Nov 07, 2024 12:52:01.370381968 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@2efc70d7]
+Nov 07, 2024 12:52:01.371164225 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@13e2a81b]
+Nov 07, 2024 12:52:01.371349447 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@5a6bb4ee]
+Nov 07, 2024 12:52:01.371453798 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@1fa800f5]
+Nov 07, 2024 12:52:01.371561839 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@23a68e72]
+Nov 07, 2024 12:52:01.371677849 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@1b14ecc2]
+Nov 07, 2024 12:52:01.371775941 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@272521da]
+Nov 07, 2024 12:52:01.372002632 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@35b2982b]
+Nov 07, 2024 12:52:01.372297674 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@15bf94a3]
+Nov 07, 2024 12:52:01.372447783 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@7a003e45]
+Nov 07, 2024 12:52:01.372560028 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@1c586ad7]
+Nov 07, 2024 12:52:01.372664018 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@757739e5]
+Nov 07, 2024 12:52:01.372918334 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@78053c82]
+Nov 07, 2024 12:52:01.373321009 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction U
+Nov 07, 2024 12:52:01.399820519 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@698e427e]
+Nov 07, 2024 12:52:01.408381620 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@3fa36050]
+Nov 07, 2024 12:52:01.409757208 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@73eb6324]
+Nov 07, 2024 12:52:01.410628656 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@4fa5f367]
+Nov 07, 2024 12:52:01.410868740 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction D
+Nov 07, 2024 12:52:01.411029163 AM comp512.ti.TreasureIsland move WARNING: Cannot move character D into a barrier. Not a legal move.
+Nov 07, 2024 12:52:01.415371774 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@12cdf901]
+Nov 07, 2024 12:52:01.420781392 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@67ef2efc]
+Nov 07, 2024 12:52:01.422075084 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@392cf654]
+Nov 07, 2024 12:52:01.423380175 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@3f88331a]
+Nov 07, 2024 12:52:01.423639845 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction D
+Nov 07, 2024 12:52:01.423782689 AM comp512.ti.TreasureIsland move WARNING: Cannot move character E into a barrier. Not a legal move.
+Nov 07, 2024 12:52:01.673447656 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@7f4e3ba8]
+Nov 07, 2024 12:52:01.674121212 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@10743696]
+Nov 07, 2024 12:52:01.674315326 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@3f682297]
+Nov 07, 2024 12:52:01.674414006 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@716bfe6a]
+Nov 07, 2024 12:52:01.674513476 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@567bb2c4]
+Nov 07, 2024 12:52:01.674691931 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@7221ac51]
+Nov 07, 2024 12:52:01.674790874 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@503953ac]
+Nov 07, 2024 12:52:01.675147265 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@1898405]
+Nov 07, 2024 12:52:01.675277375 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@34f17528]
+Nov 07, 2024 12:52:01.675377213 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@487dee39]
+Nov 07, 2024 12:52:01.675481051 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@60182227]
+Nov 07, 2024 12:52:01.675747303 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@65636979]
+Nov 07, 2024 12:52:01.675869364 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@f947ce7]
+Nov 07, 2024 12:52:01.676280809 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction R
+Nov 07, 2024 12:52:01.701741012 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@1b91da77]
+Nov 07, 2024 12:52:01.711239782 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@1cabc2d1]
+Nov 07, 2024 12:52:01.712494127 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@7c7524e8]
+Nov 07, 2024 12:52:01.713323047 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@4d046d76]
+Nov 07, 2024 12:52:01.713540899 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction R
+Nov 07, 2024 12:52:01.716693083 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@2997dc21]
+Nov 07, 2024 12:52:01.723084890 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@163d3f34]
+Nov 07, 2024 12:52:01.724798226 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@68d3ce0a]
+Nov 07, 2024 12:52:01.725887722 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@63b5ac46]
+Nov 07, 2024 12:52:01.726278734 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction R
+Nov 07, 2024 12:52:01.976227246 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@21a24bd1]
+Nov 07, 2024 12:52:01.976751447 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@97e6c9]
+Nov 07, 2024 12:52:01.976985378 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@3b1cc87a]
+Nov 07, 2024 12:52:01.977077563 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@449e8a2f]
+Nov 07, 2024 12:52:01.977173213 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@72e319cb]
+Nov 07, 2024 12:52:01.977418448 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@54ef3de3]
+Nov 07, 2024 12:52:01.977507762 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@7678dab0]
+Nov 07, 2024 12:52:01.977713447 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@2bd3400b]
+Nov 07, 2024 12:52:01.977839516 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@5aa7e3dc]
+Nov 07, 2024 12:52:01.977934822 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@309ce00c]
+Nov 07, 2024 12:52:01.978020471 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@7e9500d6]
+Nov 07, 2024 12:52:01.978512365 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@69e8c79a]
+Nov 07, 2024 12:52:01.978770885 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction L
+Nov 07, 2024 12:52:01.978721376 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@3ba5d917]
+Nov 07, 2024 12:52:02.004184705 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@5fbd1c39]
+Nov 07, 2024 12:52:02.013736939 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@651bc093]
+Nov 07, 2024 12:52:02.014847727 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@b9a7e9b]
+Nov 07, 2024 12:52:02.015347029 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@61dd0362]
+Nov 07, 2024 12:52:02.015735974 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction U
+Nov 07, 2024 12:52:02.017970564 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@5505dca9]
+Nov 07, 2024 12:52:02.026198554 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@4d70f3f7]
+Nov 07, 2024 12:52:02.027182347 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@369a183]
+Nov 07, 2024 12:52:02.028650384 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@33169c33]
+Nov 07, 2024 12:52:02.028947636 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction L
+Nov 07, 2024 12:52:02.069132880 AM comp512st.paxos.Paxos lambda$new$0 INFO: Moves processed so far: 12
+Nov 07, 2024 12:52:02.278604186 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@34ea8dc5]
+Nov 07, 2024 12:52:02.279236368 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@4f77cb2]
+Nov 07, 2024 12:52:02.279436840 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@26ee8627]
+Nov 07, 2024 12:52:02.279568169 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@361603d5]
+Nov 07, 2024 12:52:02.279643186 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@426474fc]
+Nov 07, 2024 12:52:02.279738574 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@4aea37db]
+Nov 07, 2024 12:52:02.280433072 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@61abd6f3]
+Nov 07, 2024 12:52:02.280604191 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@db252dc]
+Nov 07, 2024 12:52:02.280692691 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@6c4b2646]
+Nov 07, 2024 12:52:02.280818071 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@6fc95976]
+Nov 07, 2024 12:52:02.280927178 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@75f431e1]
+Nov 07, 2024 12:52:02.281006887 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@4e50194b]
+Nov 07, 2024 12:52:02.281338547 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@2eb431e1]
+Nov 07, 2024 12:52:02.281490788 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction L
+Nov 07, 2024 12:52:02.281635189 AM comp512.ti.TreasureIsland move WARNING: Cannot move character B into a barrier. Not a legal move.
+Nov 07, 2024 12:52:02.305101868 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@23b10c39]
+Nov 07, 2024 12:52:02.315793953 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@55849b57]
+Nov 07, 2024 12:52:02.317069886 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@5c4b4496]
+Nov 07, 2024 12:52:02.317944251 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@5a45ec61]
+Nov 07, 2024 12:52:02.318149265 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction L
+Nov 07, 2024 12:52:02.318265200 AM comp512.ti.TreasureIsland move WARNING: Cannot move character D into a barrier. Not a legal move.
+Nov 07, 2024 12:52:02.318983108 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@5e2b8f9c]
+Nov 07, 2024 12:52:02.328848612 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@2260f7f5]
+Nov 07, 2024 12:52:02.329969942 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@2590008e]
+Nov 07, 2024 12:52:02.330788166 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@771d65a5]
+Nov 07, 2024 12:52:02.331186259 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction R
+Nov 07, 2024 12:52:02.581803162 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@1199ca69]
+Nov 07, 2024 12:52:02.582313939 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@45fe7147]
+Nov 07, 2024 12:52:02.582485361 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@2eba9ae7]
+Nov 07, 2024 12:52:02.582602980 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@42510416]
+Nov 07, 2024 12:52:02.582691720 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@145a80a2]
+Nov 07, 2024 12:52:02.582789587 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@25b0e064]
+Nov 07, 2024 12:52:02.582901165 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@60ee443a]
+Nov 07, 2024 12:52:02.583309613 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@f15291d]
+Nov 07, 2024 12:52:02.583420010 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@4412a3ba]
+Nov 07, 2024 12:52:02.583495765 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@34d1148c]
+Nov 07, 2024 12:52:02.583571734 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@6f5a5aff]
+Nov 07, 2024 12:52:02.583783127 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@304f1fff]
+Nov 07, 2024 12:52:02.583943234 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@67ab8cf6]
+Nov 07, 2024 12:52:02.583995718 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction D
+Nov 07, 2024 12:52:02.606686390 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@5b3a7a27]
+Nov 07, 2024 12:52:02.618234133 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@32b89974]
+Nov 07, 2024 12:52:02.619387412 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@47eb4da6]
+Nov 07, 2024 12:52:02.619795714 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@61b550a7]
+Nov 07, 2024 12:52:02.620578467 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@71a96855]
+Nov 07, 2024 12:52:02.620767416 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction L
+Nov 07, 2024 12:52:02.620872962 AM comp512.ti.TreasureIsland move WARNING: Cannot move character D into a barrier. Not a legal move.
+Nov 07, 2024 12:52:02.631059522 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@429a64fd]
+Nov 07, 2024 12:52:02.632423576 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@5e360146]
+Nov 07, 2024 12:52:02.632952932 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@148dcf22]
+Nov 07, 2024 12:52:02.633113137 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction R
+Nov 07, 2024 12:52:02.633265485 AM comp512.ti.TreasureIsland move WARNING: Cannot move character E into a barrier. Not a legal move.
+Nov 07, 2024 12:52:02.884573170 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@4ad8c6b3]
+Nov 07, 2024 12:52:02.885112916 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@63606462]
+Nov 07, 2024 12:52:02.885257322 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@2f7a2d79]
+Nov 07, 2024 12:52:02.885347151 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@704175bd]
+Nov 07, 2024 12:52:02.885433083 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@58859446]
+Nov 07, 2024 12:52:02.885588150 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@4de07798]
+Nov 07, 2024 12:52:02.885666894 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@65b5a00b]
+Nov 07, 2024 12:52:02.885823166 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@2dcdfba5]
+Nov 07, 2024 12:52:02.886045347 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@3ed609e7]
+Nov 07, 2024 12:52:02.886125501 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@305eb487]
+Nov 07, 2024 12:52:02.886230746 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@41f10baa]
+Nov 07, 2024 12:52:02.886445610 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@3be52469]
+Nov 07, 2024 12:52:02.886527933 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@21ac5df1]
+Nov 07, 2024 12:52:02.886630885 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction R
+Nov 07, 2024 12:52:02.908185646 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@16252e50]
+Nov 07, 2024 12:52:02.921197880 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@26fec8ce]
+Nov 07, 2024 12:52:02.921989473 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@10af6f5d]
+Nov 07, 2024 12:52:02.923420563 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@1cafe784]
+Nov 07, 2024 12:52:02.923622241 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@523d1f3e]
+Nov 07, 2024 12:52:02.923762104 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction L
+Nov 07, 2024 12:52:02.923909850 AM comp512.ti.TreasureIsland move WARNING: Cannot move character D into a barrier. Not a legal move.
+Nov 07, 2024 12:52:02.933298062 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@5004134a]
+Nov 07, 2024 12:52:02.934257059 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@2a0a32b7]
+Nov 07, 2024 12:52:02.935111998 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@5465d36a]
+Nov 07, 2024 12:52:02.935334848 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction U
+Nov 07, 2024 12:52:03.069287314 AM comp512st.paxos.Paxos lambda$new$0 INFO: Moves processed so far: 9
+Nov 07, 2024 12:52:03.186873550 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@557fda26]
+Nov 07, 2024 12:52:03.187488635 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@4069bf7c]
+Nov 07, 2024 12:52:03.187629877 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@1ec685f1]
+Nov 07, 2024 12:52:03.187701610 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@5b542587]
+Nov 07, 2024 12:52:03.187781093 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@5af26130]
+Nov 07, 2024 12:52:03.187925583 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@1d028d7a]
+Nov 07, 2024 12:52:03.187988663 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@5fd04dac]
+Nov 07, 2024 12:52:03.188137252 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@1cd0c072]
+Nov 07, 2024 12:52:03.188521485 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@2a1ca767]
+Nov 07, 2024 12:52:03.188620701 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@1001a707]
+Nov 07, 2024 12:52:03.188687579 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@6551f709]
+Nov 07, 2024 12:52:03.188819192 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@3bf719fb]
+Nov 07, 2024 12:52:03.188883676 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@37559724]
+Nov 07, 2024 12:52:03.189165157 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction D
+Nov 07, 2024 12:52:03.209215921 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@206e8da8]
+Nov 07, 2024 12:52:03.223114320 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@7371f144]
+Nov 07, 2024 12:52:03.223861932 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@7212f974]
+Nov 07, 2024 12:52:03.224101112 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@490fc4fb]
+Nov 07, 2024 12:52:03.225004221 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@441000f9]
+Nov 07, 2024 12:52:03.225217344 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction D
+Nov 07, 2024 12:52:03.235262384 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@5178a719]
+Nov 07, 2024 12:52:03.235919729 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@2b7cd0df]
+Nov 07, 2024 12:52:03.236635851 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@62cedf61]
+Nov 07, 2024 12:52:03.236841324 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction R
+Nov 07, 2024 12:52:03.489070487 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@3e35b5e9]
+Nov 07, 2024 12:52:03.489464652 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@63d532ae]
+Nov 07, 2024 12:52:03.489578785 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@1f06605b]
+Nov 07, 2024 12:52:03.489658136 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@192cb5ec]
+Nov 07, 2024 12:52:03.489719830 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@5934bee3]
+Nov 07, 2024 12:52:03.489932849 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@2da67bc0]
+Nov 07, 2024 12:52:03.490012808 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@791cadf6]
+Nov 07, 2024 12:52:03.490177152 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@25b38f50]
+Nov 07, 2024 12:52:03.490283236 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@39724102]
+Nov 07, 2024 12:52:03.490348795 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@62ebe946]
+Nov 07, 2024 12:52:03.490417824 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@35c59747]
+Nov 07, 2024 12:52:03.490474527 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@63aed353]
+Nov 07, 2024 12:52:03.490652708 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@7162920f]
+Nov 07, 2024 12:52:03.490867965 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction R
+Nov 07, 2024 12:52:03.510217874 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@5fc6d749]
+Nov 07, 2024 12:52:03.525318373 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@12acaf01]
+Nov 07, 2024 12:52:03.526151091 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@6095361c]
+Nov 07, 2024 12:52:03.526960271 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@56ff6265]
+Nov 07, 2024 12:52:03.527101550 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@2a401dff]
+Nov 07, 2024 12:52:03.527208476 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction U
+Nov 07, 2024 12:52:03.536964506 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@74c594db]
+Nov 07, 2024 12:52:03.537582069 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@606478f5]
+Nov 07, 2024 12:52:03.538351313 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@7e826742]
+Nov 07, 2024 12:52:03.538570628 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction D
+Nov 07, 2024 12:52:03.538699536 AM comp512.ti.TreasureIsland move WARNING: Cannot move character E into a barrier. Not a legal move.
+Nov 07, 2024 12:52:03.791133974 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@3b688ecf]
+Nov 07, 2024 12:52:03.791603624 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@2707f749]
+Nov 07, 2024 12:52:03.791800848 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@b1112d4]
+Nov 07, 2024 12:52:03.791891652 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@13b0cee8]
+Nov 07, 2024 12:52:03.791947523 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@555343c1]
+Nov 07, 2024 12:52:03.792005629 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@529aa23]
+Nov 07, 2024 12:52:03.792623847 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@1a1b9b36]
+Nov 07, 2024 12:52:03.792723827 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@d6876fc]
+Nov 07, 2024 12:52:03.792788350 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@6493af38]
+Nov 07, 2024 12:52:03.792948177 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@27b9bf55]
+Nov 07, 2024 12:52:03.793039646 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@79d6ecbf]
+Nov 07, 2024 12:52:03.793099648 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@7f0c8090]
+Nov 07, 2024 12:52:03.793269621 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@ed7748]
+Nov 07, 2024 12:52:03.793437589 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction R
+Nov 07, 2024 12:52:03.811832592 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@3e5f6b4a]
+Nov 07, 2024 12:52:03.827250035 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@6c778c9d]
+Nov 07, 2024 12:52:03.827507550 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@49520585]
+Nov 07, 2024 12:52:03.828971049 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@635746b5]
+Nov 07, 2024 12:52:03.829164683 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@251b72d9]
+Nov 07, 2024 12:52:03.829275558 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@768513b9]
+Nov 07, 2024 12:52:03.829409247 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction D
+Nov 07, 2024 12:52:03.838577701 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@4e081474]
+Nov 07, 2024 12:52:03.839599554 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@23ddd280]
+Nov 07, 2024 12:52:03.840309324 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@6cdfd071]
+Nov 07, 2024 12:52:03.840503908 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction U
+Nov 07, 2024 12:52:03.840626025 AM comp512.ti.TreasureIsland move WARNING: Cannot move character E into a barrier. Not a legal move.
+Nov 07, 2024 12:52:04.069076183 AM comp512st.paxos.Paxos lambda$new$0 INFO: Moves processed so far: 9
+Nov 07, 2024 12:52:04.093763777 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@18c875a3]
+Nov 07, 2024 12:52:04.094255572 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@5ecc8fa7]
+Nov 07, 2024 12:52:04.094493478 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@574a9f57]
+Nov 07, 2024 12:52:04.094582144 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@f96883e]
+Nov 07, 2024 12:52:04.094639534 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@6dabbceb]
+Nov 07, 2024 12:52:04.094695842 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@22ce9480]
+Nov 07, 2024 12:52:04.095148450 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@455f8cee]
+Nov 07, 2024 12:52:04.095232444 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@2c6b9f19]
+Nov 07, 2024 12:52:04.095299499 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@235606f5]
+Nov 07, 2024 12:52:04.095366479 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@5631da64]
+Nov 07, 2024 12:52:04.095421736 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@54ceb0d8]
+Nov 07, 2024 12:52:04.095473140 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@2e63f43a]
+Nov 07, 2024 12:52:04.095523261 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@75dde938]
+Nov 07, 2024 12:52:04.095607604 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction R
+Nov 07, 2024 12:52:04.113117328 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@3e67fe03]
+Nov 07, 2024 12:52:04.129603819 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@f0a4cf9]
+Nov 07, 2024 12:52:04.130298241 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@73956566]
+Nov 07, 2024 12:52:04.130747712 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@51cc9e7a]
+Nov 07, 2024 12:52:04.131312550 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@6aa03b05]
+Nov 07, 2024 12:52:04.131572629 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction U
+Nov 07, 2024 12:52:04.135046610 AM comp512st.tests.TreasureIslandAppAuto main INFO: Done with all my moves ...
+Nov 07, 2024 12:52:04.140605585 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@61ef11c6]
+Nov 07, 2024 12:52:04.141328760 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@732119d2]
+Nov 07, 2024 12:52:04.142157067 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@259df9a2]
+Nov 07, 2024 12:52:04.142469905 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction D
+Nov 07, 2024 12:52:04.142610832 AM comp512.ti.TreasureIsland move WARNING: Cannot move character E into a barrier. Not a legal move.
+Nov 07, 2024 12:52:04.396084970 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@4f56e193]
+Nov 07, 2024 12:52:04.396618201 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@76572c6b]
+Nov 07, 2024 12:52:04.396752970 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@de65c77]
+Nov 07, 2024 12:52:04.396811577 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@7b27c7be]
+Nov 07, 2024 12:52:04.396862412 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@55fe395f]
+Nov 07, 2024 12:52:04.396955087 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@321a3ecf]
+Nov 07, 2024 12:52:04.397051126 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@4724c4bf]
+Nov 07, 2024 12:52:04.397201890 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@5d2a614a]
+Nov 07, 2024 12:52:04.397371010 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@78145faa]
+Nov 07, 2024 12:52:04.397440365 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@4c866307]
+Nov 07, 2024 12:52:04.397504906 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@3d1ae5c4]
+Nov 07, 2024 12:52:04.397570246 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@6faac1f1]
+Nov 07, 2024 12:52:04.397707647 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@25884905]
+Nov 07, 2024 12:52:04.397805384 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction D
+Nov 07, 2024 12:52:04.414331265 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@59fd7800]
+Nov 07, 2024 12:52:04.431790053 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@5aa0bd30]
+Nov 07, 2024 12:52:04.432353469 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@2e682d3c]
+Nov 07, 2024 12:52:04.432690826 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@3133dd72]
+Nov 07, 2024 12:52:04.433411711 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@52bc61dd]
+Nov 07, 2024 12:52:04.433660659 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction D
+Nov 07, 2024 12:52:04.442305438 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@37921ccc]
+Nov 07, 2024 12:52:04.442963314 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@7d08a375]
+Nov 07, 2024 12:52:04.443805520 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@5918494a]
+Nov 07, 2024 12:52:04.444010047 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction R
+Nov 07, 2024 12:52:04.698052968 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@6a731dab]
+Nov 07, 2024 12:52:04.698466164 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@b932d66]
+Nov 07, 2024 12:52:04.698692659 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@586b02da]
+Nov 07, 2024 12:52:04.698790610 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@6b209732]
+Nov 07, 2024 12:52:04.698868523 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@760ec3c2]
+Nov 07, 2024 12:52:04.698944728 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@26799735]
+Nov 07, 2024 12:52:04.699063468 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@5bd2d6f]
+Nov 07, 2024 12:52:04.699257682 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@629a9cbc]
+Nov 07, 2024 12:52:04.699413671 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@1d34245e]
+Nov 07, 2024 12:52:04.699483298 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@49b43c90]
+Nov 07, 2024 12:52:04.699538345 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@3436fe5b]
+Nov 07, 2024 12:52:04.699586741 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@1aa9b4a]
+Nov 07, 2024 12:52:04.699685741 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@10f64b01]
+Nov 07, 2024 12:52:04.699822948 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction L
+Nov 07, 2024 12:52:04.715646808 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@4787c15d]
+Nov 07, 2024 12:52:04.733533817 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@236ac4a7]
+Nov 07, 2024 12:52:04.733851862 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@1bc17de2]
+Nov 07, 2024 12:52:04.734610810 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@2a4255ce]
+Nov 07, 2024 12:52:04.734897867 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@4c041c3b]
+Nov 07, 2024 12:52:04.735350676 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@4534deb3]
+Nov 07, 2024 12:52:04.735543168 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction R
+Nov 07, 2024 12:52:04.743942898 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@39019301]
+Nov 07, 2024 12:52:04.744624761 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@2248df72]
+Nov 07, 2024 12:52:04.745093873 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@48622431]
+Nov 07, 2024 12:52:04.745229941 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction U
+Nov 07, 2024 12:52:05.000112912 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@21cbc64]
+Nov 07, 2024 12:52:05.000544074 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@1dc786bc]
+Nov 07, 2024 12:52:05.000716110 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@6ea62f1d]
+Nov 07, 2024 12:52:05.000785038 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@4c94c6aa]
+Nov 07, 2024 12:52:05.000836382 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@75088cd5]
+Nov 07, 2024 12:52:05.000909601 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@46f33468]
+Nov 07, 2024 12:52:05.001033695 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@586f3109]
+Nov 07, 2024 12:52:05.001200293 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@7ae3d746]
+Nov 07, 2024 12:52:05.001360038 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@286b879e]
+Nov 07, 2024 12:52:05.001439119 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@564d7f39]
+Nov 07, 2024 12:52:05.001494880 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@75753d7c]
+Nov 07, 2024 12:52:05.001543233 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@242c2314]
+Nov 07, 2024 12:52:05.001685081 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@1d7bbbe2]
+Nov 07, 2024 12:52:05.001796243 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction R
+Nov 07, 2024 12:52:05.016771651 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@49dfe158]
+Nov 07, 2024 12:52:05.035632813 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@6e19ac1b]
+Nov 07, 2024 12:52:05.036020851 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@519684ca]
+Nov 07, 2024 12:52:05.036707922 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@d3b262d]
+Nov 07, 2024 12:52:05.037447086 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@52b41396]
+Nov 07, 2024 12:52:05.037684804 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction D
+Nov 07, 2024 12:52:05.045626937 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@4cbc7eae]
+Nov 07, 2024 12:52:05.046621756 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@152698a4]
+Nov 07, 2024 12:52:05.047193168 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@34f51eda]
+Nov 07, 2024 12:52:05.047354913 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction U
+Nov 07, 2024 12:52:05.069038212 AM comp512st.paxos.Paxos lambda$new$0 INFO: Moves processed so far: 12
+Nov 07, 2024 12:52:05.302095570 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@427aa197]
+Nov 07, 2024 12:52:05.302512072 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@63bc27a8]
+Nov 07, 2024 12:52:05.302688300 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@6fbd1a4e]
+Nov 07, 2024 12:52:05.302804416 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@40d628ad]
+Nov 07, 2024 12:52:05.302868962 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@3d9faf07]
+Nov 07, 2024 12:52:05.302949234 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@302b4c17]
+Nov 07, 2024 12:52:05.304272280 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@781857e]
+Nov 07, 2024 12:52:05.304358526 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@1f400e3]
+Nov 07, 2024 12:52:05.304422347 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@6f307717]
+Nov 07, 2024 12:52:05.304464003 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@57d48f88]
+Nov 07, 2024 12:52:05.304516118 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@4c670ad6]
+Nov 07, 2024 12:52:05.304556118 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@47e59ac7]
+Nov 07, 2024 12:52:05.304678907 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@5084fdb5]
+Nov 07, 2024 12:52:05.304847353 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction D
+Nov 07, 2024 12:52:05.317893352 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@5d36537c]
+Nov 07, 2024 12:52:05.337846860 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@18394739]
+Nov 07, 2024 12:52:05.338914866 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@6ae3cf0b]
+Nov 07, 2024 12:52:05.339261389 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@122532e5]
+Nov 07, 2024 12:52:05.339606568 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@6d8bd773]
+Nov 07, 2024 12:52:05.339720676 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction R
+Nov 07, 2024 12:52:05.347284132 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@4e7221ed]
+Nov 07, 2024 12:52:05.347998726 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@526df537]
+Nov 07, 2024 12:52:05.348464916 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@238f3c97]
+Nov 07, 2024 12:52:05.348607364 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction L
+Nov 07, 2024 12:52:05.348943368 AM comp512.ti.TreasureIsland move INFO: Player E got treasure points 5
+Nov 07, 2024 12:52:05.605353845 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@5207116a]
+Nov 07, 2024 12:52:05.605679062 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@777044bf]
+Nov 07, 2024 12:52:05.605808621 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@19ce41ae]
+Nov 07, 2024 12:52:05.605859930 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@6b55bca3]
+Nov 07, 2024 12:52:05.605904718 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@5926c421]
+Nov 07, 2024 12:52:05.605970884 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@4feb6f3e]
+Nov 07, 2024 12:52:05.606132621 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@327e4e60]
+Nov 07, 2024 12:52:05.606345873 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@456064cf]
+Nov 07, 2024 12:52:05.606435673 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@37d73ac1]
+Nov 07, 2024 12:52:05.606479042 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@1740e2a]
+Nov 07, 2024 12:52:05.606522621 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@4b1cdd21]
+Nov 07, 2024 12:52:05.606562635 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@10c95267]
+Nov 07, 2024 12:52:05.606795627 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@2f86b148]
+Nov 07, 2024 12:52:05.606941113 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction L
+Nov 07, 2024 12:52:05.619025290 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@20a6e5ff]
+Nov 07, 2024 12:52:05.640251391 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@3f73d8de]
+Nov 07, 2024 12:52:05.640688940 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@448c5b7c]
+Nov 07, 2024 12:52:05.641179627 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@cf0b00c]
+Nov 07, 2024 12:52:05.641876043 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@67d8430d]
+Nov 07, 2024 12:52:05.642046729 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction R
+Nov 07, 2024 12:52:05.648995175 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@2db0d904]
+Nov 07, 2024 12:52:05.650007061 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@770123a1]
+Nov 07, 2024 12:52:05.650551958 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@638720e0]
+Nov 07, 2024 12:52:05.650740884 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction R
+Nov 07, 2024 12:52:05.907208218 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@406e6f55]
+Nov 07, 2024 12:52:05.907532895 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@4a807f02]
+Nov 07, 2024 12:52:05.907683727 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@7f85eb12]
+Nov 07, 2024 12:52:05.907734290 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@232476]
+Nov 07, 2024 12:52:05.907776183 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@39871c9d]
+Nov 07, 2024 12:52:05.907847623 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@4f64ff24]
+Nov 07, 2024 12:52:05.908012880 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@46a37ea1]
+Nov 07, 2024 12:52:05.908293065 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@12d49a50]
+Nov 07, 2024 12:52:05.908377778 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@5c359bcc]
+Nov 07, 2024 12:52:05.908421551 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@912e2cf]
+Nov 07, 2024 12:52:05.908460771 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@6b14eba4]
+Nov 07, 2024 12:52:05.908553410 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@a250de1]
+Nov 07, 2024 12:52:05.908678642 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@6f1243d8]
+Nov 07, 2024 12:52:05.908791203 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction R
+Nov 07, 2024 12:52:05.920001968 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@28b6a899]
+Nov 07, 2024 12:52:05.941927053 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@4aa2f56]
+Nov 07, 2024 12:52:05.942198928 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@62ed461a]
+Nov 07, 2024 12:52:05.942831148 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@4708b161]
+Nov 07, 2024 12:52:05.942961827 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@225bc304]
+Nov 07, 2024 12:52:05.943263893 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@e39beed]
+Nov 07, 2024 12:52:05.943430068 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction R
+Nov 07, 2024 12:52:05.950966049 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@6cb6af80]
+Nov 07, 2024 12:52:05.951877704 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@366c02d6]
+Nov 07, 2024 12:52:05.952445260 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@370e9372]
+Nov 07, 2024 12:52:05.952591524 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction L
+Nov 07, 2024 12:52:06.069024805 AM comp512st.paxos.Paxos lambda$new$0 INFO: Moves processed so far: 9
+Nov 07, 2024 12:52:06.209109808 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@760bdad8]
+Nov 07, 2024 12:52:06.209545625 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@2b80f4ce]
+Nov 07, 2024 12:52:06.209699012 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@3f28396d]
+Nov 07, 2024 12:52:06.209753992 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@1be89d9]
+Nov 07, 2024 12:52:06.209818984 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@42bc2d45]
+Nov 07, 2024 12:52:06.209904502 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@72d67126]
+Nov 07, 2024 12:52:06.210046707 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@5b9bf189]
+Nov 07, 2024 12:52:06.210259731 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@266a75a1]
+Nov 07, 2024 12:52:06.210336442 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@57dd7c73]
+Nov 07, 2024 12:52:06.210379308 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@58adfcc1]
+Nov 07, 2024 12:52:06.210424124 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@4ae96e9e]
+Nov 07, 2024 12:52:06.210501317 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@503e2098]
+Nov 07, 2024 12:52:06.210619178 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@e9fa6ae]
+Nov 07, 2024 12:52:06.210743938 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction R
+Nov 07, 2024 12:52:06.221160827 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@49c7e8dd]
+Nov 07, 2024 12:52:06.244201746 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@48e84d1b]
+Nov 07, 2024 12:52:06.244420078 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@5bb6556]
+Nov 07, 2024 12:52:06.245003872 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@b655c3d]
+Nov 07, 2024 12:52:06.245426493 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@28108e11]
+Nov 07, 2024 12:52:06.245570163 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction D
+Nov 07, 2024 12:52:06.252567189 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@e813fb0]
+Nov 07, 2024 12:52:06.252995504 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@4d57a811]
+Nov 07, 2024 12:52:06.253525522 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@38d21023]
+Nov 07, 2024 12:52:06.253710595 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction U
+Nov 07, 2024 12:52:06.511091066 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@22151537]
+Nov 07, 2024 12:52:06.511463912 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@54a8731c]
+Nov 07, 2024 12:52:06.511598898 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@2686bf45]
+Nov 07, 2024 12:52:06.511665767 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@7984c506]
+Nov 07, 2024 12:52:06.511707950 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@faea80c]
+Nov 07, 2024 12:52:06.511775396 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@290c9813]
+Nov 07, 2024 12:52:06.511949021 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@53b41149]
+Nov 07, 2024 12:52:06.512320815 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@206d6747]
+Nov 07, 2024 12:52:06.512386268 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@8d56af6]
+Nov 07, 2024 12:52:06.512430112 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@389ad451]
+Nov 07, 2024 12:52:06.512475715 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@2a35dbb5]
+Nov 07, 2024 12:52:06.512522950 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@238688bc]
+Nov 07, 2024 12:52:06.512639030 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@2a5b72d0]
+Nov 07, 2024 12:52:06.512747156 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction D
+Nov 07, 2024 12:52:06.512826605 AM comp512.ti.TreasureIsland move INFO: Player B got treasure points 8
+Nov 07, 2024 12:52:06.522388288 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@16b71464]
+Nov 07, 2024 12:52:06.545593563 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@1901093a]
+Nov 07, 2024 12:52:06.546017908 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@223bc45]
+Nov 07, 2024 12:52:06.547287294 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@2e6fda16]
+Nov 07, 2024 12:52:06.547420807 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@474e5e99]
+Nov 07, 2024 12:52:06.547813438 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@63ee13c8]
+Nov 07, 2024 12:52:06.547957822 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction U
+Nov 07, 2024 12:52:06.553700390 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@78325cdd]
+Nov 07, 2024 12:52:06.554443927 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@50c918f0]
+Nov 07, 2024 12:52:06.554846746 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@2a5d342d]
+Nov 07, 2024 12:52:06.555004461 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction R
+Nov 07, 2024 12:52:06.813339528 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@39b48c49]
+Nov 07, 2024 12:52:06.813684040 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@6040976f]
+Nov 07, 2024 12:52:06.813840948 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@4a79ec6f]
+Nov 07, 2024 12:52:06.813893846 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@97c694a]
+Nov 07, 2024 12:52:06.813940224 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@18bd0f83]
+Nov 07, 2024 12:52:06.814008427 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@743ab461]
+Nov 07, 2024 12:52:06.814166777 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@165fd38]
+Nov 07, 2024 12:52:06.814372519 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@70d9d236]
+Nov 07, 2024 12:52:06.814442947 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@6be4ef37]
+Nov 07, 2024 12:52:06.814515630 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@63c2180c]
+Nov 07, 2024 12:52:06.814557816 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@77e738e8]
+Nov 07, 2024 12:52:06.814614179 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@766b6899]
+Nov 07, 2024 12:52:06.814817119 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@6d92dea0]
+Nov 07, 2024 12:52:06.814913406 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction U
+Nov 07, 2024 12:52:06.823682101 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@730bbdd2]
+Nov 07, 2024 12:52:06.848020265 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@3b0b3737]
+Nov 07, 2024 12:52:06.848584511 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@67b2e7b7]
+Nov 07, 2024 12:52:06.848945359 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@286813cd]
+Nov 07, 2024 12:52:06.849592041 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@950331d]
+Nov 07, 2024 12:52:06.849747854 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction L
+Nov 07, 2024 12:52:06.855059851 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@7bd4921c]
+Nov 07, 2024 12:52:06.855533215 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@38eb2d17]
+Nov 07, 2024 12:52:06.856006936 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@52b72579]
+Nov 07, 2024 12:52:06.856124221 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction D
+Nov 07, 2024 12:52:07.069303546 AM comp512st.paxos.Paxos lambda$new$0 INFO: Moves processed so far: 9
+Nov 07, 2024 12:52:07.115481164 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@688d5de9]
+Nov 07, 2024 12:52:07.115737539 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@523dc74e]
+Nov 07, 2024 12:52:07.115867096 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@4581e857]
+Nov 07, 2024 12:52:07.115932034 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@2146555b]
+Nov 07, 2024 12:52:07.115983539 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@46afe1fd]
+Nov 07, 2024 12:52:07.116054480 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@5db183e3]
+Nov 07, 2024 12:52:07.116212007 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@78d9d37c]
+Nov 07, 2024 12:52:07.116407400 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@3457519]
+Nov 07, 2024 12:52:07.116500362 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@7e5d771d]
+Nov 07, 2024 12:52:07.116564101 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@220c1b9d]
+Nov 07, 2024 12:52:07.116601521 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@2751cd5f]
+Nov 07, 2024 12:52:07.116637283 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@392e9cd5]
+Nov 07, 2024 12:52:07.116743993 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@125028d]
+Nov 07, 2024 12:52:07.116871797 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction D
+Nov 07, 2024 12:52:07.124926503 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@77c0c360]
+Nov 07, 2024 12:52:07.149873796 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@4fcf5403]
+Nov 07, 2024 12:52:07.150066244 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@f8e80e5]
+Nov 07, 2024 12:52:07.150818369 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@470f5e3c]
+Nov 07, 2024 12:52:07.151351233 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@d06d5da]
+Nov 07, 2024 12:52:07.151494073 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction U
+Nov 07, 2024 12:52:07.156248356 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@1fbf7e54]
+Nov 07, 2024 12:52:07.156848605 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@74c81c37]
+Nov 07, 2024 12:52:07.157235891 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@67b77378]
+Nov 07, 2024 12:52:07.157366367 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction L
+Nov 07, 2024 12:52:07.417258741 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@383cab5d]
+Nov 07, 2024 12:52:07.417652414 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@7247150c]
+Nov 07, 2024 12:52:07.417767472 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@e48cd15]
+Nov 07, 2024 12:52:07.417813546 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@598b1567]
+Nov 07, 2024 12:52:07.417852096 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@2414da10]
+Nov 07, 2024 12:52:07.417921254 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@7ff151fc]
+Nov 07, 2024 12:52:07.418097678 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@268d8c78]
+Nov 07, 2024 12:52:07.418361057 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@f95c34e]
+Nov 07, 2024 12:52:07.418451209 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@11cefddd]
+Nov 07, 2024 12:52:07.418495324 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@166e98ce]
+Nov 07, 2024 12:52:07.418532976 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@8f42b2e]
+Nov 07, 2024 12:52:07.418608320 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@434afefb]
+Nov 07, 2024 12:52:07.418787748 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@52aef7a2]
+Nov 07, 2024 12:52:07.418911326 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction R
+Nov 07, 2024 12:52:07.418993101 AM comp512.ti.TreasureIsland move WARNING: Cannot move character B into a barrier. Not a legal move.
+Nov 07, 2024 12:52:07.426212236 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@4571c6d1]
+Nov 07, 2024 12:52:07.450986031 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@158d5fc]
+Nov 07, 2024 12:52:07.451503216 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@2c8daf66]
+Nov 07, 2024 12:52:07.451640162 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@7aaae49a]
+Nov 07, 2024 12:52:07.452040300 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@171e0728]
+Nov 07, 2024 12:52:07.452446033 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@15589b81]
+Nov 07, 2024 12:52:07.452550522 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction U
+Nov 07, 2024 12:52:07.457333454 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@22730790]
+Nov 07, 2024 12:52:07.457858014 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@7e038c15]
+Nov 07, 2024 12:52:07.458392472 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@342609ac]
+Nov 07, 2024 12:52:07.458504982 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction U
+Nov 07, 2024 12:52:07.719348751 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@1a46a887]
+Nov 07, 2024 12:52:07.719717035 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@506209fb]
+Nov 07, 2024 12:52:07.719854759 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@345bc6dc]
+Nov 07, 2024 12:52:07.719917370 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@739ebce2]
+Nov 07, 2024 12:52:07.719953423 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@566c4f0e]
+Nov 07, 2024 12:52:07.719994228 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@fa13482]
+Nov 07, 2024 12:52:07.720275479 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@71cc2f0a]
+Nov 07, 2024 12:52:07.720476050 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@547ac576]
+Nov 07, 2024 12:52:07.720548960 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@3229db68]
+Nov 07, 2024 12:52:07.720588094 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@357acd1d]
+Nov 07, 2024 12:52:07.720624854 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@6c199dd4]
+Nov 07, 2024 12:52:07.720661731 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@1b08beab]
+Nov 07, 2024 12:52:07.720884890 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@7b575dee]
+Nov 07, 2024 12:52:07.721067270 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction U
+Nov 07, 2024 12:52:07.727135671 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@1cfe3dc7]
+Nov 07, 2024 12:52:07.752556632 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@5cb86f03]
+Nov 07, 2024 12:52:07.753155375 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@55e9bd42]
+Nov 07, 2024 12:52:07.753623910 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@719bce3a]
+Nov 07, 2024 12:52:07.753790363 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@43cb0ed]
+Nov 07, 2024 12:52:07.754237266 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@2c37524]
+Nov 07, 2024 12:52:07.754417228 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction R
+Nov 07, 2024 12:52:07.758622541 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@e98c766]
+Nov 07, 2024 12:52:07.759177207 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@af7c470]
+Nov 07, 2024 12:52:07.759608180 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@3e57ee1f]
+Nov 07, 2024 12:52:07.759717953 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction R
+Nov 07, 2024 12:52:08.021317975 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@3bbaaeae]
+Nov 07, 2024 12:52:08.022924245 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@57f237c7]
+Nov 07, 2024 12:52:08.023029988 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@7718e1af]
+Nov 07, 2024 12:52:08.023074405 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@1e80333c]
+Nov 07, 2024 12:52:08.023112637 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@2b9e72ac]
+Nov 07, 2024 12:52:08.023170127 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@7e4d1c8f]
+Nov 07, 2024 12:52:08.023474507 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@294d53dc]
+Nov 07, 2024 12:52:08.023594271 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@56eb747d]
+Nov 07, 2024 12:52:08.023671180 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@293be401]
+Nov 07, 2024 12:52:08.023738099 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@3d7576c3]
+Nov 07, 2024 12:52:08.023787881 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@6834d336]
+Nov 07, 2024 12:52:08.023824476 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@66d6bda9]
+Nov 07, 2024 12:52:08.024048025 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@695cf40]
+Nov 07, 2024 12:52:08.024180508 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction L
+Nov 07, 2024 12:52:08.027985075 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@5e845655]
+Nov 07, 2024 12:52:08.054504387 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@70cc246]
+Nov 07, 2024 12:52:08.054701370 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@36e45652]
+Nov 07, 2024 12:52:08.055579752 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@19a1a4aa]
+Nov 07, 2024 12:52:08.055773827 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@1e7fedd6]
+Nov 07, 2024 12:52:08.056360833 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@8c033f2]
+Nov 07, 2024 12:52:08.056526948 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction R
+Nov 07, 2024 12:52:08.059765290 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@628bee94]
+Nov 07, 2024 12:52:08.060420576 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@63adc3cc]
+Nov 07, 2024 12:52:08.060849656 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@7c2b1556]
+Nov 07, 2024 12:52:08.060962191 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction U
+Nov 07, 2024 12:52:08.069284455 AM comp512st.paxos.Paxos lambda$new$0 INFO: Moves processed so far: 12
+Nov 07, 2024 12:52:08.324536993 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@5e46d62c]
+Nov 07, 2024 12:52:08.324905017 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@1d56ad8b]
+Nov 07, 2024 12:52:08.325036887 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@33794847]
+Nov 07, 2024 12:52:08.325104360 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@29843ba8]
+Nov 07, 2024 12:52:08.325165009 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@5ba8ecb6]
+Nov 07, 2024 12:52:08.325215703 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@716ece32]
+Nov 07, 2024 12:52:08.325384691 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@53356074]
+Nov 07, 2024 12:52:08.325627028 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@7b725a9d]
+Nov 07, 2024 12:52:08.325689214 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@75f31de0]
+Nov 07, 2024 12:52:08.325741105 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@3a571b77]
+Nov 07, 2024 12:52:08.325790275 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@5f69d975]
+Nov 07, 2024 12:52:08.325829579 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@4c2c71c5]
+Nov 07, 2024 12:52:08.325921277 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@136d1469]
+Nov 07, 2024 12:52:08.326070023 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction L
+Nov 07, 2024 12:52:08.328592622 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@6326bef3]
+Nov 07, 2024 12:52:08.356755905 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@5b2750b6]
+Nov 07, 2024 12:52:08.356967141 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@4b2b420c]
+Nov 07, 2024 12:52:08.357642557 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@52f1a783]
+Nov 07, 2024 12:52:08.358303714 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@4ea02c37]
+Nov 07, 2024 12:52:08.358509010 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction U
+Nov 07, 2024 12:52:08.360983452 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@4112782f]
+Nov 07, 2024 12:52:08.361680896 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@65b754fe]
+Nov 07, 2024 12:52:08.362056283 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@62af1924]
+Nov 07, 2024 12:52:08.362212444 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction L
+Nov 07, 2024 12:52:08.626637743 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@3bffc97a]
+Nov 07, 2024 12:52:08.626977445 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@4cae0a37]
+Nov 07, 2024 12:52:08.627118601 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@43b138b1]
+Nov 07, 2024 12:52:08.627184356 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@1f6c7a3c]
+Nov 07, 2024 12:52:08.627222139 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@5f3b3b37]
+Nov 07, 2024 12:52:08.627276880 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@4da2eeed]
+Nov 07, 2024 12:52:08.627453999 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@2afe24e8]
+Nov 07, 2024 12:52:08.627675508 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@51cba382]
+Nov 07, 2024 12:52:08.627737627 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@57ea0203]
+Nov 07, 2024 12:52:08.627775983 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@1fa32476]
+Nov 07, 2024 12:52:08.627829084 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@662e32e6]
+Nov 07, 2024 12:52:08.627882781 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@2d6d51f4]
+Nov 07, 2024 12:52:08.627984858 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@14ba04d8]
+Nov 07, 2024 12:52:08.628085863 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction D
+Nov 07, 2024 12:52:08.629347418 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@bdf3fde]
+Nov 07, 2024 12:52:08.658412299 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@4659dbfa]
+Nov 07, 2024 12:52:08.658614754 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@72ff3665]
+Nov 07, 2024 12:52:08.659245355 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@5773ca1f]
+Nov 07, 2024 12:52:08.659448585 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@3d717d99]
+Nov 07, 2024 12:52:08.659791988 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@13227b2]
+Nov 07, 2024 12:52:08.659949779 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction D
+Nov 07, 2024 12:52:08.662277775 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@406c93d8]
+Nov 07, 2024 12:52:08.662722912 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@5a10d4c8]
+Nov 07, 2024 12:52:08.663241787 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@1f9ce1]
+Nov 07, 2024 12:52:08.663372794 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction U
+Nov 07, 2024 12:52:08.663451005 AM comp512.ti.TreasureIsland move INFO: Player E got treasure points 3
+Nov 07, 2024 12:52:08.928607372 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@5e04d24e]
+Nov 07, 2024 12:52:08.929050132 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@46173491]
+Nov 07, 2024 12:52:08.929214360 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@5d58d970]
+Nov 07, 2024 12:52:08.929265785 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@5866402]
+Nov 07, 2024 12:52:08.929308516 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@5197a145]
+Nov 07, 2024 12:52:08.929369427 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@6998800]
+Nov 07, 2024 12:52:08.929507970 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@95d0083]
+Nov 07, 2024 12:52:08.929746294 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@4d8559b4]
+Nov 07, 2024 12:52:08.929843163 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@22cf2958]
+Nov 07, 2024 12:52:08.929885204 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@566a4b6e]
+Nov 07, 2024 12:52:08.929923274 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@2199e57d]
+Nov 07, 2024 12:52:08.929964089 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@36374aaa]
+Nov 07, 2024 12:52:08.930365595 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@4d507e28]
+Nov 07, 2024 12:52:08.930442324 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@356b64e8]
+Nov 07, 2024 12:52:08.930560541 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction L
+Nov 07, 2024 12:52:08.930634169 AM comp512.ti.TreasureIsland move WARNING: Cannot move character B into a barrier. Not a legal move.
+Nov 07, 2024 12:52:08.960388051 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@7bfb4fae]
+Nov 07, 2024 12:52:08.960706543 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@5e64cc52]
+Nov 07, 2024 12:52:08.961302486 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@6b64e8d4]
+Nov 07, 2024 12:52:08.961966112 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@14a8ea95]
+Nov 07, 2024 12:52:08.962108457 AM comp512.ti.TreasureIsland move INFO: Move request: player number 4 direction D
+Nov 07, 2024 12:52:08.963467318 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@7e251f5d]
+Nov 07, 2024 12:52:08.963822920 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@2216cec]
+Nov 07, 2024 12:52:08.964367617 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@48323d20]
+Nov 07, 2024 12:52:08.964454826 AM comp512.ti.TreasureIsland move INFO: Move request: player number 5 direction R
+Nov 07, 2024 12:52:09.069179210 AM comp512st.paxos.Paxos lambda$new$0 INFO: Moves processed so far: 9
+Nov 07, 2024 12:52:09.230509857 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@3fbb033]
+Nov 07, 2024 12:52:09.230818185 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@4464b27d]
+Nov 07, 2024 12:52:09.230959582 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@6243f1d7]
+Nov 07, 2024 12:52:09.231057246 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@178ec6b3]
+Nov 07, 2024 12:52:09.231141175 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@5a477716]
+Nov 07, 2024 12:52:09.231216349 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@136c4897]
+Nov 07, 2024 12:52:09.231300892 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@5fec60d8]
+Nov 07, 2024 12:52:09.231449554 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@56c5cd2]
+Nov 07, 2024 12:52:09.231670289 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@6b4e24b3]
+Nov 07, 2024 12:52:09.231739435 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@3130c455]
+Nov 07, 2024 12:52:09.231794069 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@45656250]
+Nov 07, 2024 12:52:09.231834780 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@7bffd08e]
+Nov 07, 2024 12:52:09.231874064 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@7be0c5cf]
+Nov 07, 2024 12:52:09.232053847 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@35ea6bc1]
+Nov 07, 2024 12:52:09.232193096 AM comp512.ti.TreasureIsland move INFO: Move request: player number 2 direction R
+Nov 07, 2024 12:52:09.232338975 AM comp512st.tests.TreasureIslandAppAuto main INFO: Shutting down Paxos
+Nov 07, 2024 12:52:09.261929904 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@7fcac5a4]
+Nov 07, 2024 12:52:09.262416992 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@378ea02f]
+Nov 07, 2024 12:52:09.262709195 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@7348053]
+Nov 07, 2024 12:52:09.263049289 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@64211809]
+Nov 07, 2024 12:52:09.263524840 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@5bf2c5c]
+Nov 07, 2024 12:52:09.264559308 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@4c2a301c]
+Nov 07, 2024 12:52:09.264875607 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@15a8cf84]
+Nov 07, 2024 12:52:09.265266243 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@64f10556]
+Nov 07, 2024 12:52:09.532050565 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@3d5eaac3]
+Nov 07, 2024 12:52:09.532480094 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@48dae9e2]
+Nov 07, 2024 12:52:09.532805367 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@5c48104f]
+Nov 07, 2024 12:52:09.533062658 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@66ee6558]
+Nov 07, 2024 12:52:09.533109247 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@780c5f99]
+Nov 07, 2024 12:52:09.533152095 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@2fb7b6e7]
+Nov 07, 2024 12:52:09.533279027 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@a688c7a]
+Nov 07, 2024 12:52:09.533321146 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@3546641e]
+Nov 07, 2024 12:52:09.533419948 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@5394a514]
+Nov 07, 2024 12:52:09.533753348 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@601e51be]
+Nov 07, 2024 12:52:09.533846902 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@6390b2ab]
+Nov 07, 2024 12:52:09.533894103 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@175ff7fb]
+Nov 07, 2024 12:52:09.534419923 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40120:val:comp512st.paxos.Paxos$PaxosMessage@573b3384]
+Nov 07, 2024 12:52:09.534484130 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@3ac1076f]
+Nov 07, 2024 12:52:09.534986933 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40220:val:comp512st.paxos.Paxos$PaxosMessage@4c1ed37d]
+Nov 07, 2024 12:52:09.563764933 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@4adebc98]
+Nov 07, 2024 12:52:09.563959737 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@564cb16e]
+Nov 07, 2024 12:52:09.564687438 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40320:val:comp512st.paxos.Paxos$PaxosMessage@694b8b88]
+Nov 07, 2024 12:52:09.565044454 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@2a6daa37]
+Nov 07, 2024 12:52:09.565573686 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@4458de7b]
+Nov 07, 2024 12:52:09.565657604 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40420:val:comp512st.paxos.Paxos$PaxosMessage@3087d874]
+Nov 07, 2024 12:52:09.565859106 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@28efb813]
+Nov 07, 2024 12:52:09.566265509 AM comp512.gcl.GCL readGCMessage INFO: Delivering message : [senderProcess:open-gpu-1.cs.mcgill.ca:40520:val:comp512st.paxos.Paxos$PaxosMessage@66aaea28]
+Nov 07, 2024 12:52:09.735087707 AM comp512.gcl.GCL shutdownGCL INFO: GCL Shutdown request received.
+Nov 07, 2024 12:52:09.735186234 AM comp512.gcl.GCL$InboxListener shutdown INFO: Received request to shutdown GCL Inbox listener thread.
+Nov 07, 2024 12:52:09.735332304 AM comp512.gcl.GCL$InboxListener run INFO: GCL Inbox listener is now shutdown. We will not be accepting new incoming connections anymore.
+Nov 07, 2024 12:52:09.735517949 AM comp512.gcl.GCL shutdownGCL INFO: Inbox listener thread is now shutdown.
+Nov 07, 2024 12:52:09.735573472 AM comp512.gcl.GCL shutdownGCL INFO: Initiating broadcast of CLOSE message to all my outbound connections.
+Nov 07, 2024 12:52:09.735800520 AM comp512.gcl.GCL$GCLOutBoxDespatcher shutdown INFO: open-gpu-1.cs.mcgill.ca:40420: Request initiated to shutdown the message despatcher thread for this process. The thread is currently alive.
+Nov 07, 2024 12:52:09.735874923 AM comp512.gcl.GCL$GCLOutBoxDespatcher run INFO: open-gpu-1.cs.mcgill.ca:40120: Detected CLOSE marker in the outgoing message. I am shutting down after this.
+Nov 07, 2024 12:52:09.736216576 AM comp512.gcl.GCL$GCLOutBoxDespatcher run INFO: open-gpu-1.cs.mcgill.ca:40320: Detected CLOSE marker in the outgoing message. I am shutting down after this.
+Nov 07, 2024 12:52:09.736387614 AM comp512.gcl.GCL$GCLOutBoxDespatcher run INFO: open-gpu-1.cs.mcgill.ca:40120: Message despatch thread to the process is now shutdown. No more messages will be sent to that process.
+Nov 07, 2024 12:52:09.735829763 AM comp512.gcl.GCL$GCLOutBoxDespatcher run INFO: open-gpu-1.cs.mcgill.ca:40420: Detected CLOSE marker in the outgoing message. I am shutting down after this.
+Nov 07, 2024 12:52:09.736626799 AM comp512.gcl.GCL$GCLOutBoxDespatcher run INFO: open-gpu-1.cs.mcgill.ca:40420: Message despatch thread to the process is now shutdown. No more messages will be sent to that process.
+Nov 07, 2024 12:52:09.736387665 AM comp512.gcl.GCL$GCLOutBoxDespatcher run INFO: open-gpu-1.cs.mcgill.ca:40320: Message despatch thread to the process is now shutdown. No more messages will be sent to that process.
+Nov 07, 2024 12:52:09.736791264 AM comp512.gcl.GCL$GCLInbox run INFO: open-gpu-1.cs.mcgill.ca:40320: Is closing connection. I will not get anymore messages from them.
+Nov 07, 2024 12:52:09.736941582 AM comp512.gcl.GCL$GCLInbox run INFO: open-gpu-1.cs.mcgill.ca:40320: Closed incoming connection from this process. The inBox thread is shutdown.
+Nov 07, 2024 12:52:09.737079923 AM comp512.gcl.GCL$GCLOutBoxDespatcher run INFO: open-gpu-1.cs.mcgill.ca:40220: Detected CLOSE marker in the outgoing message. I am shutting down after this.
+Nov 07, 2024 12:52:09.737826133 AM comp512.gcl.GCL$GCLOutBoxDespatcher run INFO: open-gpu-1.cs.mcgill.ca:40220: Message despatch thread to the process is now shutdown. No more messages will be sent to that process.
+Nov 07, 2024 12:52:09.737180900 AM comp512.gcl.GCL$GCLOutBoxDespatcher run INFO: open-gpu-1.cs.mcgill.ca:40520: Detected CLOSE marker in the outgoing message. I am shutting down after this.
+Nov 07, 2024 12:52:09.738056759 AM comp512.gcl.GCL$GCLOutBoxDespatcher run INFO: open-gpu-1.cs.mcgill.ca:40520: Message despatch thread to the process is now shutdown. No more messages will be sent to that process.
+Nov 07, 2024 12:52:09.737496397 AM comp512.gcl.GCL$GCLInbox run INFO: open-gpu-1.cs.mcgill.ca:40220: Is closing connection. I will not get anymore messages from them.
+Nov 07, 2024 12:52:09.738242476 AM comp512.gcl.GCL$GCLInbox run INFO: open-gpu-1.cs.mcgill.ca:40220: Closed incoming connection from this process. The inBox thread is shutdown.
+Nov 07, 2024 12:52:09.738734939 AM comp512.gcl.GCL$GCLInbox run INFO: open-gpu-1.cs.mcgill.ca:40520: Is closing connection. I will not get anymore messages from them.
+Nov 07, 2024 12:52:09.738865078 AM comp512.gcl.GCL$GCLInbox run INFO: open-gpu-1.cs.mcgill.ca:40520: Closed incoming connection from this process. The inBox thread is shutdown.
+Nov 07, 2024 12:52:09.739126744 AM comp512.gcl.GCL$GCLInbox run INFO: open-gpu-1.cs.mcgill.ca:40120: Is closing connection. I will not get anymore messages from them.
+Nov 07, 2024 12:52:09.739248040 AM comp512.gcl.GCL$GCLInbox run INFO: open-gpu-1.cs.mcgill.ca:40120: Closed incoming connection from this process. The inBox thread is shutdown.
+Nov 07, 2024 12:52:09.767944948 AM comp512.gcl.GCL$GCLInbox run INFO: open-gpu-1.cs.mcgill.ca:40420: Is closing connection. I will not get anymore messages from them.
+Nov 07, 2024 12:52:09.768117959 AM comp512.gcl.GCL$GCLInbox run INFO: open-gpu-1.cs.mcgill.ca:40420: Closed incoming connection from this process. The inBox thread is shutdown.
+Nov 07, 2024 12:52:09.936175342 AM comp512.gcl.GCL$GCLOutBoxDespatcher shutdown INFO: open-gpu-1.cs.mcgill.ca:40320: Request initiated to shutdown the message despatcher thread for this process. The thread is currently not alive.
+Nov 07, 2024 12:52:09.936285504 AM comp512.gcl.GCL$GCLOutBoxDespatcher shutdown INFO: open-gpu-1.cs.mcgill.ca:40220: Request initiated to shutdown the message despatcher thread for this process. The thread is currently not alive.
+Nov 07, 2024 12:52:09.936324052 AM comp512.gcl.GCL$GCLOutBoxDespatcher shutdown INFO: open-gpu-1.cs.mcgill.ca:40120: Request initiated to shutdown the message despatcher thread for this process. The thread is currently not alive.
+Nov 07, 2024 12:52:09.936359346 AM comp512.gcl.GCL$GCLOutBoxDespatcher shutdown INFO: open-gpu-1.cs.mcgill.ca:40520: Request initiated to shutdown the message despatcher thread for this process. The thread is currently not alive.
+Nov 07, 2024 12:52:09.936474406 AM comp512.gcl.GCL shutdownGCL INFO: open-gpu-1.cs.mcgill.ca:40420: GCL outbox despatcher thread for this process is now shutdown.
+Nov 07, 2024 12:52:09.936520022 AM comp512.gcl.GCL shutdownGCL INFO: open-gpu-1.cs.mcgill.ca:40320: GCL outbox despatcher thread for this process is now shutdown.
+Nov 07, 2024 12:52:09.936556592 AM comp512.gcl.GCL shutdownGCL INFO: open-gpu-1.cs.mcgill.ca:40220: GCL outbox despatcher thread for this process is now shutdown.
+Nov 07, 2024 12:52:09.936591072 AM comp512.gcl.GCL shutdownGCL INFO: open-gpu-1.cs.mcgill.ca:40120: GCL outbox despatcher thread for this process is now shutdown.
+Nov 07, 2024 12:52:09.936625816 AM comp512.gcl.GCL shutdownGCL INFO: open-gpu-1.cs.mcgill.ca:40520: GCL outbox despatcher thread for this process is now shutdown.
+Nov 07, 2024 12:52:09.936804262 AM comp512.gcl.GCL$GCLInbox shutdown INFO: open-gpu-1.cs.mcgill.ca:40420: Requesting shutdown for GCL message inbox thread from this process. This thread is currently not alive.
+Nov 07, 2024 12:52:09.936914171 AM comp512.gcl.GCL$GCLInbox shutdown INFO: open-gpu-1.cs.mcgill.ca:40420: This thread has already terminated.
+Nov 07, 2024 12:52:09.936974189 AM comp512.gcl.GCL$GCLInbox shutdown INFO: open-gpu-1.cs.mcgill.ca:40320: Requesting shutdown for GCL message inbox thread from this process. This thread is currently not alive.
+Nov 07, 2024 12:52:09.937017096 AM comp512.gcl.GCL$GCLInbox shutdown INFO: open-gpu-1.cs.mcgill.ca:40320: This thread has already terminated.
+Nov 07, 2024 12:52:09.937060994 AM comp512.gcl.GCL$GCLInbox shutdown INFO: open-gpu-1.cs.mcgill.ca:40220: Requesting shutdown for GCL message inbox thread from this process. This thread is currently not alive.
+Nov 07, 2024 12:52:09.937098498 AM comp512.gcl.GCL$GCLInbox shutdown INFO: open-gpu-1.cs.mcgill.ca:40220: This thread has already terminated.
+Nov 07, 2024 12:52:09.937135862 AM comp512.gcl.GCL$GCLInbox shutdown INFO: open-gpu-1.cs.mcgill.ca:40120: Requesting shutdown for GCL message inbox thread from this process. This thread is currently not alive.
+Nov 07, 2024 12:52:09.937184715 AM comp512.gcl.GCL$GCLInbox shutdown INFO: open-gpu-1.cs.mcgill.ca:40120: This thread has already terminated.
+Nov 07, 2024 12:52:09.937234491 AM comp512.gcl.GCL$GCLInbox shutdown INFO: open-gpu-1.cs.mcgill.ca:40520: Requesting shutdown for GCL message inbox thread from this process. This thread is currently not alive.
+Nov 07, 2024 12:52:09.937267599 AM comp512.gcl.GCL$GCLInbox shutdown INFO: open-gpu-1.cs.mcgill.ca:40520: This thread has already terminated.
+Nov 07, 2024 12:52:09.937345367 AM comp512.gcl.GCL shutdownGCL INFO: open-gpu-1.cs.mcgill.ca:40420: GCL inbox thread for this proess is now shutdown.
+Nov 07, 2024 12:52:09.937386123 AM comp512.gcl.GCL shutdownGCL INFO: open-gpu-1.cs.mcgill.ca:40320: GCL inbox thread for this proess is now shutdown.
+Nov 07, 2024 12:52:09.937419984 AM comp512.gcl.GCL shutdownGCL INFO: open-gpu-1.cs.mcgill.ca:40220: GCL inbox thread for this proess is now shutdown.
+Nov 07, 2024 12:52:09.937452830 AM comp512.gcl.GCL shutdownGCL INFO: open-gpu-1.cs.mcgill.ca:40120: GCL inbox thread for this proess is now shutdown.
+Nov 07, 2024 12:52:09.937485730 AM comp512.gcl.GCL shutdownGCL INFO: open-gpu-1.cs.mcgill.ca:40520: GCL inbox thread for this proess is now shutdown.
+Nov 07, 2024 12:52:09.937568783 AM comp512.gcl.GCL readGCMessage INFO: GCL is being shutdown. No more messages will be delivered. Reader will be interrupted.
+Nov 07, 2024 12:52:09.937641594 AM comp512.gcl.GCL broadcastMsg SEVERE: broadcastMsg was called after a shutdown was initiated! message : comp512st.paxos.Paxos$PaxosMessage@1dbc2c8f
+Nov 07, 2024 12:52:09.938536358 AM comp512st.tests.TreasureIslandAppAuto main INFO: Process terminated.

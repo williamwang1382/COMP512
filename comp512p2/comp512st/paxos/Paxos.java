@@ -8,10 +8,8 @@ import java.net.UnknownHostException;
 import java.nio.channels.Pipe.SourceChannel;
 import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.TimeUnit;
-import java.util.TreeMap;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
-import java.util.HashMap;
 
 
 
@@ -24,7 +22,6 @@ public class Paxos
 	//Queuing System
 	LinkedBlockingDeque<Object> outgoing;
 	LinkedBlockingDeque<Object> incoming;
-
 	LinkedBlockingDeque<Object> proposerQueue;
 
 	Proposer proposer;
@@ -40,6 +37,11 @@ public class Paxos
 
 	int numProcesses; int majority;
 
+	// test
+	Object lock = new Object();
+	
+
+
 	public Paxos(String myProcess, String[] allGroupProcesses, Logger logger, FailCheck failCheck) throws IOException, UnknownHostException
 	{
 		// Rember to call the failCheck.checkFailure(..) with appropriate arguments throughout your Paxos code to force fail points if necessary.
@@ -50,12 +52,12 @@ public class Paxos
 		majority = (numProcesses / 2)+1;
 		outgoing = new LinkedBlockingDeque<>();
 		incoming = new LinkedBlockingDeque<>();
-	
 		proposerQueue = new LinkedBlockingDeque<>();
 		acceptor = new Acceptor(myProcess);
 		proposer = new Proposer(myProcess);
 		proposer.start();
 		acceptor.start();
+
 
 		
 	}
@@ -69,10 +71,7 @@ public class Paxos
 
 	public Object acceptTOMsg() throws InterruptedException
 	{
-
 		Object obj = incoming.take();
-
-
 		return obj;
 	}
 
@@ -189,10 +188,8 @@ public class Paxos
 						if (numAcceptAcks >= majority){
 							//System.out.println("Value Accepted by Majority. BID: " + ballotID);
 							failCheck.checkFailure(FailCheck.FailureType.AFTERVALUEACCEPT);
-							this.acceptedVal = val;
-							System.out.println("sending out CONFIRM with val: " + this.acceptedVal);
+							acceptedVal = val;
 							confirm(this.ballotID, this.acceptedVal);
-
 							b = System.currentTimeMillis();
 							rateTime += (b - a);
 							reset();
@@ -212,14 +209,15 @@ public class Paxos
 
 				} else { continue;}
 
-				// For fairness, each process should wait for a 100ms before sending the next proposal
-				try {
-					Thread.sleep(300); // Wait for 100ms
-				} catch (InterruptedException e) {
-					System.out.println("Thread was interrupted");
-					break; 
-				}
+				// try{
+				// 	Thread.sleep(100);
+				// } catch (InterruptedException e){
+				// 	Thread.currentThread().interrupt();
+				// 	break;
+				// }
+
 			}
+
 		}
 
 		int generateBID(){
@@ -254,10 +252,6 @@ public class Paxos
 
 	private class Acceptor extends Thread{
 		int maxBID; int acceptedBID; Object acceptedVal; String processID;
-
-		// William test changes
-		// Buffer to store out-of-order messages
-    	private TreeMap<Integer, PaxosMessage> buffer = new TreeMap<>();
 
 		private Acceptor(String processID){
 			maxBID = -1; acceptedBID = -1; acceptedVal = null; this.processID = processID;
@@ -295,11 +289,7 @@ public class Paxos
 						proposerQueue.offer(pxmsg);
 						break;
 					case CONFIRM:
-
 						incoming.offer(pxmsg.val);
-
-
-
 						break;
 					default:
 						break;
